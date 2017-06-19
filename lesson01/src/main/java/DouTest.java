@@ -69,7 +69,7 @@ public class DouTest {
 
     @Test
     public void getEventsTextFromTheBlock() {
-        List<WebElement> arrOfEvents = new ArrayList<WebElement>();
+        List<WebElement> arrOfEvents;
         driver.get(urlOfDOU);
         driver.findElement(topPanelLenta).click();
 
@@ -84,8 +84,8 @@ public class DouTest {
     }
 
     @Test
-    public void getEventsDateFromTheBlock() {
-        List<WebElement> arrOfEvents = new ArrayList<WebElement>();
+    public void getEventsDateAndCityFromTheBlock() {
+        List<WebElement> arrOfEvents;
         driver.get(urlOfDOU);
         driver.findElement(topPanelLenta).click();
 
