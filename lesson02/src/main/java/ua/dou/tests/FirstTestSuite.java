@@ -11,18 +11,24 @@ import ua.dou.pageobjects.ForumPage;
 import ua.dou.pageobjects.HomePage;
 import ua.dou.pageobjects.NewsFeedPage;
 
+import java.net.URL;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class FirstTestSuite {
     private static WebDriver driver;
-    private static HomePage homePage = new HomePage();
-    private static ForumPage forumPage = new ForumPage();
-    private static NewsFeedPage newsFeedPage = new NewsFeedPage();
+    private HomePage homePage;
+    private ForumPage forumPage;
+    private NewsFeedPage newsFeedPage;
 
     @Before
     public void setUp() throws InterruptedException {
-        System.setProperty("webdriver.gecko.driver", "D:\\GitHub\\Automation\\lesson02\\src\\main\\resources\\geckodriver.exe"); //./src/main/resources/geckodriver.exe
+        System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
         driver = new FirefoxDriver();
+        homePage = new HomePage(driver);
+        forumPage = new ForumPage(driver);
+        newsFeedPage = new NewsFeedPage(driver);
     }
 
     @After
@@ -32,35 +38,17 @@ public class FirstTestSuite {
 
     @Test
     public void verifyingTheTitleOfHomePage() {
-        driver.get(homePage.getURL());
-        assertEquals("Wrong title of Home Page", homePage.getTheTitle(), driver.getTitle());
+        homePage.isTitleCorrect(homePage.getURL(), homePage.getTheTitle());
     }
 
     @Test
     public void verifyingTheTitleOfForumPage() {
-        driver.get(forumPage.getURL());
-        assertEquals("Wrong title of Forum Page", forumPage.getTheTitle(), driver.getTitle());
+        forumPage.isTitleCorrect(forumPage.getURL(), forumPage.getTheTitle());
     }
 
     @Test
     public void verifyingTheTitleOfNewsFeedPage() {
-        driver.get(newsFeedPage.getURL());
-        assertEquals("Wrong title of News Feed Page", newsFeedPage.getTheTitle(), driver.getTitle());
+        newsFeedPage.isTitleCorrect(newsFeedPage.getURL(), newsFeedPage.getTheTitle());
     }
 
-    @Test
-    public void gettingTheNameOfFirstArticleInForum() {
-        driver.get(homePage.getURL());
-        driver.findElement(forumPage.getForumFromTopPanel()).click();
-
-        new WebDriverWait(driver, 5)
-                .until(ExpectedConditions.presenceOfElementLocated(forumPage.getFirstArticleInTheForum()));
-
-        driver.findElement(forumPage.getFirstArticleInTheForum()).click();
-
-        new WebDriverWait(driver, 5)
-                .until(ExpectedConditions.presenceOfElementLocated(forumPage.getNameOfAnArticle()));
-
-        System.out.println("The name Of the Article is: " + driver.findElement(forumPage.getNameOfAnArticle()).getText());
-    }
 }
