@@ -52,7 +52,7 @@ public class ForumPage extends BasePage{
         return driver.findElement(nameOfAnArticle).getText();
     }
 
-    public int countingTopicsOnThePage() {
+    public int countTopicsOnThePage() {
         List<WebElement> arrOfTopics = new ArrayList<WebElement>();
 
         driver.get(getURL());

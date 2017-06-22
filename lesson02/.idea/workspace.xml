@@ -16,8 +16,8 @@
       <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="method#openThePageFromTopPanel#0;class#BasePage#0" expanded="false" />
               </folding>
@@ -28,9 +28,13 @@
       <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="119">
+              <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#562#563#0" expanded="true" />
+                <element signature="e#627#628#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,10 +42,16 @@
       <file leaf-file-name="NewsFeedPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
-                <marker date="1498120922817" expanded="true" signature="779:786" ph="{...}" />
+                <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+                <element signature="e#1163#1175#0" expanded="true" />
+                <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+                <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+                <element signature="e#1966#1974#0" expanded="true" />
+                <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
+                <marker date="1498124041808" expanded="true" signature="981:988" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -50,14 +60,14 @@
       <file leaf-file-name="ForumPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/ForumPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="62" column="1" lean-forward="false" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+            <state relative-caret-position="442">
+              <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
               <folding>
                 <element signature="method#setNumOfAnArticleInTheForum#0;class#ForumPage#0" expanded="false" />
                 <element signature="method#openArticleInTheForum#0;class#ForumPage#0" expanded="false" />
                 <element signature="method#getNameOfAnArticle#0;class#ForumPage#0" expanded="false" />
-                <element signature="method#countingTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
-                <element signature="e#1956#1968#0" expanded="true" />
+                <element signature="method#countTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
+                <element signature="e#1953#1965#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,17 +76,21 @@
       <file leaf-file-name="FirstTestSuite.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/tests/FirstTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="80" column="1" lean-forward="false" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+            <state relative-caret-position="221">
+              <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
               <folding>
                 <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
                 <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
                 <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
+                <element signature="method#verifyingOfTopPanelIsVisible#0;class#FirstTestSuite#0" expanded="false" />
                 <element signature="method#openingForumFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
                 <element signature="method#openingNewsFeedFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
                 <element signature="method#gettingTheNameOfTheFirstArticleInForum#0;class#FirstTestSuite#0" expanded="false" />
                 <element signature="method#countingTopicsOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
                 <element signature="method#gettingTheNameOfTheLastArticleOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
+                <element signature="method#countingEventsInTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+                <element signature="method#gettingEventsDateAndCityFromTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+                <element signature="method#gettingListOfEventsDates#0;class#FirstTestSuite#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -112,10 +126,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/newsFeed.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/forumPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/BasePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/ForumPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/dou/tests/FirstTestSuite.java" />
       </list>
     </option>
@@ -127,7 +141,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -209,8 +223,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTestSuite.openingForumFromTopPanel">
-    <configuration name="FirstTestSuite.openingForumFromTopPanel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FirstTestSuite">
+    <configuration name="FirstTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ua.dou.tests.*" />
@@ -222,7 +236,32 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ua.dou.tests" />
       <option name="MAIN_CLASS_NAME" value="ua.dou.tests.FirstTestSuite" />
-      <option name="METHOD_NAME" value="openingForumFromTopPanel" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="FirstTestSuite.countingTopicsOnForumPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ua.dou.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="lesson02" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ua.dou.tests" />
+      <option name="MAIN_CLASS_NAME" value="ua.dou.tests.FirstTestSuite" />
+      <option name="METHOD_NAME" value="countingTopicsOnForumPage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -235,7 +274,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FirstTestSuite.openingNewsFeedFromTopPanel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTestSuite.gettingListOfEventsDates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ua.dou.tests.*" />
@@ -247,7 +286,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ua.dou.tests" />
       <option name="MAIN_CLASS_NAME" value="ua.dou.tests.FirstTestSuite" />
-      <option name="METHOD_NAME" value="openingNewsFeedFromTopPanel" />
+      <option name="METHOD_NAME" value="gettingListOfEventsDates" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -260,7 +299,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FirstTestSuite.verifyingTheTitleOfForumPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTestSuite.gettingTheNameOfTheLastArticleOnForumPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ua.dou.tests.*" />
@@ -272,7 +311,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ua.dou.tests" />
       <option name="MAIN_CLASS_NAME" value="ua.dou.tests.FirstTestSuite" />
-      <option name="METHOD_NAME" value="verifyingTheTitleOfForumPage" />
+      <option name="METHOD_NAME" value="gettingTheNameOfTheLastArticleOnForumPage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -285,7 +324,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FirstTestSuite.verifyingTheTitleOfHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTestSuite.verifyingOfTopPanelIsVisible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ua.dou.tests.*" />
@@ -297,32 +336,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ua.dou.tests" />
       <option name="MAIN_CLASS_NAME" value="ua.dou.tests.FirstTestSuite" />
-      <option name="METHOD_NAME" value="verifyingTheTitleOfHomePage" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="FirstTestSuite.verifyingTheTitleOfNewsFeedPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ua.dou.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="lesson02" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ua.dou.tests" />
-      <option name="MAIN_CLASS_NAME" value="ua.dou.tests.FirstTestSuite" />
-      <option name="METHOD_NAME" value="verifyingTheTitleOfNewsFeedPage" />
+      <option name="METHOD_NAME" value="verifyingOfTopPanelIsVisible" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -479,19 +493,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.openingNewsFeedFromTopPanel" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.openingForumFromTopPanel" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.verifyingTheTitleOfHomePage" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.verifyingTheTitleOfForumPage" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.verifyingTheTitleOfNewsFeedPage" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.countingTopicsOnForumPage" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.gettingListOfEventsDates" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTestSuite" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.gettingTheNameOfTheLastArticleOnForumPage" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.verifyingOfTopPanelIsVisible" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.openingForumFromTopPanel" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.openingNewsFeedFromTopPanel" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.verifyingTheTitleOfNewsFeedPage" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.verifyingTheTitleOfForumPage" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.verifyingTheTitleOfHomePage" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTestSuite" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.verifyingOfTopPanelIsVisible" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.gettingTheNameOfTheLastArticleOnForumPage" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.gettingListOfEventsDates" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.countingTopicsOnForumPage" />
       </list>
     </recent_temporary>
   </component>
@@ -524,47 +538,46 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTestSuite_countingTopicsOnThePage - 2017.06.22 at 11h 15m 35s.xml">
-      <configuration name="FirstTestSuite.countingTopicsOnThePage" configurationId="JUnit" />
+    <history-entry file="FirstTestSuite - 2017.06.22 at 12h 11m 17s.xml">
+      <configuration name="FirstTestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTestSuite_gettingTheNameOfTheLastArticleOnForumPage - 2017.06.22 at 11h 16m 14s.xml">
+    <history-entry file="FirstTestSuite - 2017.06.22 at 13h 24m 00s.xml">
+      <configuration name="FirstTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTestSuite_countingTopicsOnForumPage - 2017.06.22 at 12h 08m 02s.xml">
+      <configuration name="FirstTestSuite.countingTopicsOnForumPage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTestSuite_gettingEventsDateAndCityFromTheBlock - 2017.06.22 at 11h 58m 57s.xml">
+      <configuration name="FirstTestSuite.gettingEventsDateAndCityFromTheBlock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTestSuite_gettingListOfEventsDates - 2017.06.22 at 12h 09m 52s.xml">
+      <configuration name="FirstTestSuite.gettingListOfEventsDates" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTestSuite_gettingTheNameOfTheLastArticleOnForumPage - 2017.06.22 at 12h 11m 50s.xml">
       <configuration name="FirstTestSuite.gettingTheNameOfTheLastArticleOnForumPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTestSuite_openingForumFromTopPanel - 2017.06.22 at 11h 28m 28s.xml">
-      <configuration name="FirstTestSuite.openingForumFromTopPanel" configurationId="JUnit" />
+    <history-entry file="FirstTestSuite_gettingTheNameOfTheLastArticleOnForumPage - 2017.06.22 at 12h 32m 56s.xml">
+      <configuration name="FirstTestSuite.gettingTheNameOfTheLastArticleOnForumPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTestSuite_openingForumFromTopPanel - 2017.06.22 at 11h 32m 28s.xml">
-      <configuration name="FirstTestSuite.openingForumFromTopPanel" configurationId="JUnit" />
+    <history-entry file="FirstTestSuite_verifyingOfTopPanelIsVisible - 2017.06.22 at 13h 19m 48s.xml">
+      <configuration name="FirstTestSuite.verifyingOfTopPanelIsVisible" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTestSuite_openingForumFromTopPanel - 2017.06.22 at 11h 36m 44s.xml">
-      <configuration name="FirstTestSuite.openingForumFromTopPanel" configurationId="JUnit" />
+    <history-entry file="FirstTestSuite_verifyingOfTopPanelIsVisible - 2017.06.22 at 13h 20m 12s.xml">
+      <configuration name="FirstTestSuite.verifyingOfTopPanelIsVisible" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTestSuite_openingNewsFeedFromTopPanel - 2017.06.22 at 11h 27m 21s.xml">
-      <configuration name="FirstTestSuite.openingNewsFeedFromTopPanel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTestSuite_openingNewsFeedFromTopPanel - 2017.06.22 at 11h 33m 43s.xml">
-      <configuration name="FirstTestSuite.openingNewsFeedFromTopPanel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTestSuite_verifyingTheTitleOfForumPage - 2017.06.22 at 11h 30m 46s.xml">
-      <configuration name="FirstTestSuite.verifyingTheTitleOfForumPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTestSuite_verifyingTheTitleOfHomePage - 2017.06.22 at 11h 29m 54s.xml">
-      <configuration name="FirstTestSuite.verifyingTheTitleOfHomePage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTestSuite_verifyingTheTitleOfNewsFeedPage - 2017.06.22 at 11h 31m 31s.xml">
-      <configuration name="FirstTestSuite.verifyingTheTitleOfNewsFeedPage" configurationId="JUnit" />
+    <history-entry file="FirstTestSuite_verifyingOfTopPanelIsVisible - 2017.06.22 at 13h 20m 29s.xml">
+      <configuration name="FirstTestSuite.verifyingOfTopPanelIsVisible" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838982" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31567797" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31567797" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -591,7 +604,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -618,7 +631,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -627,7 +644,13 @@
         <state relative-caret-position="153">
           <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
-            <marker date="1498120922817" expanded="true" signature="779:786" ph="{...}" />
+            <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1163#1175#0" expanded="true" />
+            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1966#1974#0" expanded="true" />
+            <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
+            <marker date="1498124041808" expanded="true" signature="981:988" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -640,8 +663,8 @@
             <element signature="method#setNumOfAnArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#openArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#getNameOfAnArticle#0;class#ForumPage#0" expanded="false" />
-            <element signature="method#countingTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
-            <element signature="e#1956#1968#0" expanded="true" />
+            <element signature="method#countTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
+            <element signature="e#1953#1965#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -662,11 +685,15 @@
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#verifyingOfTopPanelIsVisible#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingForumFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingNewsFeedFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheFirstArticleInForum#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#countingTopicsOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheLastArticleOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#countingEventsInTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingEventsDateAndCityFromTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingListOfEventsDates#0;class#FirstTestSuite#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -685,7 +712,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -697,8 +728,8 @@
             <element signature="method#setNumOfAnArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#openArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#getNameOfAnArticle#0;class#ForumPage#0" expanded="false" />
-            <element signature="method#countingTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
-            <element signature="e#1956#1968#0" expanded="true" />
+            <element signature="method#countTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
+            <element signature="e#1953#1965#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -708,7 +739,13 @@
         <state relative-caret-position="153">
           <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
-            <marker date="1498120922817" expanded="true" signature="779:786" ph="{...}" />
+            <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1163#1175#0" expanded="true" />
+            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1966#1974#0" expanded="true" />
+            <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
+            <marker date="1498124041808" expanded="true" signature="981:988" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -721,11 +758,15 @@
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#verifyingOfTopPanelIsVisible#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingForumFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingNewsFeedFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheFirstArticleInForum#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#countingTopicsOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheLastArticleOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#countingEventsInTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingEventsDateAndCityFromTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingListOfEventsDates#0;class#FirstTestSuite#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -753,7 +794,13 @@
         <state relative-caret-position="153">
           <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
-            <marker date="1498120922817" expanded="true" signature="779:786" ph="{...}" />
+            <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1163#1175#0" expanded="true" />
+            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1966#1974#0" expanded="true" />
+            <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
+            <marker date="1498124041808" expanded="true" signature="981:988" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -762,7 +809,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -774,8 +825,8 @@
             <element signature="method#setNumOfAnArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#openArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#getNameOfAnArticle#0;class#ForumPage#0" expanded="false" />
-            <element signature="method#countingTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
-            <element signature="e#1956#1968#0" expanded="true" />
+            <element signature="method#countTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
+            <element signature="e#1953#1965#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -796,11 +847,15 @@
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#verifyingOfTopPanelIsVisible#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingForumFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingNewsFeedFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheFirstArticleInForum#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#countingTopicsOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheLastArticleOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#countingEventsInTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingEventsDateAndCityFromTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingListOfEventsDates#0;class#FirstTestSuite#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -819,7 +874,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -828,7 +887,13 @@
         <state relative-caret-position="153">
           <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
-            <marker date="1498120922817" expanded="true" signature="779:786" ph="{...}" />
+            <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1163#1175#0" expanded="true" />
+            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1966#1974#0" expanded="true" />
+            <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
+            <marker date="1498124041808" expanded="true" signature="981:988" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -841,8 +906,8 @@
             <element signature="method#setNumOfAnArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#openArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#getNameOfAnArticle#0;class#ForumPage#0" expanded="false" />
-            <element signature="method#countingTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
-            <element signature="e#1956#1968#0" expanded="true" />
+            <element signature="method#countTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
+            <element signature="e#1953#1965#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -855,11 +920,15 @@
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#verifyingOfTopPanelIsVisible#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingForumFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingNewsFeedFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheFirstArticleInForum#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#countingTopicsOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheLastArticleOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#countingEventsInTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingEventsDateAndCityFromTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingListOfEventsDates#0;class#FirstTestSuite#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -878,7 +947,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -887,7 +960,13 @@
         <state relative-caret-position="153">
           <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
           <folding>
-            <marker date="1498120922817" expanded="true" signature="779:786" ph="{...}" />
+            <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1163#1175#0" expanded="true" />
+            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1966#1974#0" expanded="true" />
+            <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
+            <marker date="1498124041808" expanded="true" signature="981:988" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -900,8 +979,8 @@
             <element signature="method#setNumOfAnArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#openArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#getNameOfAnArticle#0;class#ForumPage#0" expanded="false" />
-            <element signature="method#countingTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
-            <element signature="e#1956#1968#0" expanded="true" />
+            <element signature="method#countTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
+            <element signature="e#1953#1965#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -914,11 +993,15 @@
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#verifyingOfTopPanelIsVisible#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingForumFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingNewsFeedFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheFirstArticleInForum#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#countingTopicsOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheLastArticleOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#countingEventsInTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingEventsDateAndCityFromTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingListOfEventsDates#0;class#FirstTestSuite#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -927,7 +1010,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -936,7 +1023,13 @@
         <state relative-caret-position="119">
           <caret line="7" column="85" lean-forward="false" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
           <folding>
-            <marker date="1498120922817" expanded="true" signature="779:786" ph="{...}" />
+            <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1163#1175#0" expanded="true" />
+            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1966#1974#0" expanded="true" />
+            <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
+            <marker date="1498124041808" expanded="true" signature="981:988" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -959,8 +1052,8 @@
             <element signature="method#setNumOfAnArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#openArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#getNameOfAnArticle#0;class#ForumPage#0" expanded="false" />
-            <element signature="method#countingTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
-            <element signature="e#1956#1968#0" expanded="true" />
+            <element signature="method#countTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
+            <element signature="e#1953#1965#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -973,11 +1066,15 @@
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#verifyingOfTopPanelIsVisible#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingForumFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingNewsFeedFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheFirstArticleInForum#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#countingTopicsOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheLastArticleOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#countingEventsInTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingEventsDateAndCityFromTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingListOfEventsDates#0;class#FirstTestSuite#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -986,7 +1083,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -995,7 +1096,13 @@
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1498120922817" expanded="true" signature="779:786" ph="{...}" />
+            <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1163#1175#0" expanded="true" />
+            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1966#1974#0" expanded="true" />
+            <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
+            <marker date="1498124041808" expanded="true" signature="981:988" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1008,8 +1115,8 @@
             <element signature="method#setNumOfAnArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#openArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#getNameOfAnArticle#0;class#ForumPage#0" expanded="false" />
-            <element signature="method#countingTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
-            <element signature="e#1956#1968#0" expanded="true" />
+            <element signature="method#countTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
+            <element signature="e#1953#1965#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1026,7 +1133,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1035,7 +1146,13 @@
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1498120922817" expanded="true" signature="779:786" ph="{...}" />
+            <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1163#1175#0" expanded="true" />
+            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1966#1974#0" expanded="true" />
+            <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
+            <marker date="1498124041808" expanded="true" signature="981:988" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1048,8 +1165,8 @@
             <element signature="method#setNumOfAnArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#openArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#getNameOfAnArticle#0;class#ForumPage#0" expanded="false" />
-            <element signature="method#countingTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
-            <element signature="e#1956#1968#0" expanded="true" />
+            <element signature="method#countTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
+            <element signature="e#1953#1965#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1091,61 +1208,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/BasePage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/ForumPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
           <folding>
-            <element signature="method#openThePageFromTopPanel#0;class#BasePage#0" expanded="false" />
+            <element signature="method#setNumOfAnArticleInTheForum#0;class#ForumPage#0" expanded="false" />
+            <element signature="method#openArticleInTheForum#0;class#ForumPage#0" expanded="false" />
+            <element signature="method#getNameOfAnArticle#0;class#ForumPage#0" expanded="false" />
+            <element signature="method#countTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
+            <element signature="e#1953#1965#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1163#1175#0" expanded="true" />
+            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1966#1974#0" expanded="true" />
+            <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
+            <marker date="1498124041808" expanded="true" signature="981:988" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="119">
+          <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
           <folding>
-            <marker date="1498120922817" expanded="true" signature="779:786" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/ForumPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="62" column="1" lean-forward="false" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+        <state relative-caret-position="272">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="method#setNumOfAnArticleInTheForum#0;class#ForumPage#0" expanded="false" />
-            <element signature="method#openArticleInTheForum#0;class#ForumPage#0" expanded="false" />
-            <element signature="method#getNameOfAnArticle#0;class#ForumPage#0" expanded="false" />
-            <element signature="method#countingTopicsOnThePage#0;class#ForumPage#0" expanded="false" />
-            <element signature="e#1956#1968#0" expanded="true" />
+            <element signature="method#openThePageFromTopPanel#0;class#BasePage#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/tests/FirstTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="80" column="1" lean-forward="false" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+        <state relative-caret-position="221">
+          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
           <folding>
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#verifyingOfTopPanelIsVisible#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingForumFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#openingNewsFeedFromTopPanel#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheFirstArticleInForum#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#countingTopicsOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#gettingTheNameOfTheLastArticleOnForumPage#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#countingEventsInTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingEventsDateAndCityFromTheBlock#0;class#FirstTestSuite#0" expanded="false" />
+            <element signature="method#gettingListOfEventsDates#0;class#FirstTestSuite#0" expanded="false" />
           </folding>
         </state>
       </provider>
