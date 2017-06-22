@@ -2,20 +2,20 @@ package ua.dou.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static org.junit.Assert.assertEquals;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ForumPage extends BasePage{
     private static final String urlOfForum = "https://dou.ua/forums/";
     private static final String titleOfForumPage = "Форум программистов | DOU";
     private static final By ForumFromTopPanel = new By.ByXPath(".//a[text() = 'Форум']");
-    private static By articleInTheForum;
-    //private static final By firstArticleInTheForum = new By.ByXPath(".//article["+ 1 +"]/h2/a");
+    private static By specificArticleInTheForum;
+    private static By articlesInTheForum = new By.ByXPath(".//article");
     private static final By nameOfAnArticle = new By.ByXPath(".//article[@class = 'b-typo']/h1");
-
-    //private final WebDriver driver;
 
     public ForumPage(WebDriver driver) {
         super(driver);
@@ -29,24 +29,35 @@ public class ForumPage extends BasePage{
         return titleOfForumPage;
     }
 
-    public static void setNumOfAnArticleInTheForum(int numOfTheArticle) {
-        ForumPage.articleInTheForum = new By.ByXPath(".//article["+ numOfTheArticle +"]/h2/a");;
+    public By getForumFromTopPanel() {
+        return ForumFromTopPanel;
+    }
+
+    private static void setNumOfAnArticleInTheForum(int numOfTheArticle) {
+        ForumPage.specificArticleInTheForum = new By.ByXPath(".//article["+ numOfTheArticle +"]/h2/a");;
     }
 
     public void openArticleInTheForum(int numOfTheArticle) {
-        //driver.get(super.getBaseURL());
-        driver.findElement(ForumFromTopPanel).click();
+        setNumOfAnArticleInTheForum(numOfTheArticle);
+        driver.get(getURL());
         new WebDriverWait(driver, 5)
-                .until(ExpectedConditions.presenceOfElementLocated(articleInTheForum));
+                .until(ExpectedConditions.presenceOfElementLocated(specificArticleInTheForum));
 
-        driver.findElement(articleInTheForum).click();
+        driver.findElement(specificArticleInTheForum).click();
     }
 
-    public String getNameOfAnArticle(int numOfTheArticle) {
-        openArticleInTheForum(numOfTheArticle);
+    public String getNameOfAnArticle() {
         new WebDriverWait(driver, 5)
                 .until(ExpectedConditions.presenceOfElementLocated(nameOfAnArticle));
         return driver.findElement(nameOfAnArticle).getText();
+    }
+
+    public int countingTopicsOnThePage() {
+        List<WebElement> arrOfTopics = new ArrayList<WebElement>();
+
+        driver.get(getURL());
+        arrOfTopics = driver.findElements(articlesInTheForum);
+        return arrOfTopics.size();
     }
 
 }

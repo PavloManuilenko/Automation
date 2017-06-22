@@ -4,17 +4,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.chrome.ChromeDriver;
 import ua.dou.pageobjects.ForumPage;
 import ua.dou.pageobjects.HomePage;
 import ua.dou.pageobjects.NewsFeedPage;
-
-import java.net.URL;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 public class FirstTestSuite {
     private static WebDriver driver;
@@ -24,8 +17,10 @@ public class FirstTestSuite {
 
     @Before
     public void setUp() throws InterruptedException {
-        System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
-        driver = new FirefoxDriver();
+        //System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+        //driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         homePage = new HomePage(driver);
         forumPage = new ForumPage(driver);
         newsFeedPage = new NewsFeedPage(driver);
@@ -38,17 +33,49 @@ public class FirstTestSuite {
 
     @Test
     public void verifyingTheTitleOfHomePage() {
-        homePage.isTitleCorrect(homePage.getURL(), homePage.getTheTitle());
+        driver.get(homePage.getURL());
+        homePage.isTitleCorrect(homePage.getTheTitle());
     }
 
     @Test
     public void verifyingTheTitleOfForumPage() {
-        forumPage.isTitleCorrect(forumPage.getURL(), forumPage.getTheTitle());
+        driver.get(forumPage.getURL());
+        forumPage.isTitleCorrect(forumPage.getTheTitle());
     }
 
     @Test
     public void verifyingTheTitleOfNewsFeedPage() {
-        newsFeedPage.isTitleCorrect(newsFeedPage.getURL(), newsFeedPage.getTheTitle());
+        driver.get(newsFeedPage.getURL());
+        newsFeedPage.isTitleCorrect(newsFeedPage.getTheTitle());
+    }
+
+    @Test
+    public void openingForumFromTopPanel() {
+        forumPage.openThePageFromTopPanel(forumPage.getForumFromTopPanel());
+        forumPage.isTitleCorrect(forumPage.getTheTitle());
+    }
+
+    @Test
+    public void openingNewsFeedFromTopPanel() {
+        newsFeedPage.openThePageFromTopPanel(newsFeedPage.getLentaFromTopPanel());
+        newsFeedPage.isTitleCorrect(newsFeedPage.getTheTitle());
+    }
+
+    @Test
+    public void gettingTheNameOfTheFirstArticleInForum() {
+        forumPage.openArticleInTheForum(1);
+        System.out.println("The name of the first article is: "+ forumPage.getNameOfAnArticle());
+    }
+
+    @Test
+    public void countingTopicsOnForumPage() {
+        System.out.println("There are " + forumPage.countingTopicsOnThePage() + " topics on one Forum page");
+    }
+
+    @Test
+    public void gettingTheNameOfTheLastArticleOnForumPage() {
+        forumPage.openArticleInTheForum(forumPage.countingTopicsOnThePage());
+        System.out.println("The name of the Last article on Forum page: "+ forumPage.getNameOfAnArticle());
     }
 
 }
