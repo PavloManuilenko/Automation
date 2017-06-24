@@ -12,7 +12,7 @@ import java.util.List;
 public class NewsFeedPage extends BasePage {
     private static final String urlOfForum = "https://dou.ua/lenta/";
     private static final String titleOfForumPage = "Новые записи — Лента | DOU";
-    private static final By lentaFromtopPanel = new By.ByXPath(".//a[text() = 'Лента']");
+    private static final By lentaFromTopPanel = new By.ByXPath(".//a[text() = 'Лента']");
     private static final By eventBlock = new By.ByXPath(".//div[@class = 'b-adv-events']");
     private static final By eventFromBlock = new By.ByXPath(".//div[@class = 'adv-event-block']");
 
@@ -29,7 +29,7 @@ public class NewsFeedPage extends BasePage {
     }
 
     public By getLentaFromTopPanel() {
-        return lentaFromtopPanel;
+        return lentaFromTopPanel;
     }
 
     public int countEventsInTheBlock() {
