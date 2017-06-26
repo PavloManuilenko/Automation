@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NewsFeedPage extends BasePage {
-    private static final String urlOfForum = "https://dou.ua/lenta/";
-    private static final String titleOfForumPage = "Новые записи — Лента | DOU";
+    private static final String urlOfNewsFeed = "https://dou.ua/lenta/";
+    private static final String titleOfNewsFeed = "Новые записи — Лента | DOU";
     private static final By lentaFromTopPanel = new By.ByXPath(".//a[text() = 'Лента']");
     private static final By eventBlock = new By.ByXPath(".//div[@class = 'b-adv-events']");
     private static final By eventFromBlock = new By.ByXPath(".//div[@class = 'adv-event-block']");
@@ -20,12 +20,12 @@ public class NewsFeedPage extends BasePage {
         super(driver);
     }
 
-    public String getURL() {
-        return urlOfForum;
+    public void open() {
+        driver.get(urlOfNewsFeed);
     }
 
     public String getTheTitle() {
-        return titleOfForumPage;
+        return titleOfNewsFeed;
     }
 
     public By getLentaFromTopPanel() {
@@ -74,6 +74,7 @@ public class NewsFeedPage extends BasePage {
 
     private String pickTheDate(String sourceStr, char lastChar) {
         int lastIndex = sourceStr.indexOf(lastChar);
-        return sourceStr.substring(0, lastIndex);
+        if (lastIndex >= 0) return sourceStr.substring(0, lastIndex);
+        else return sourceStr;
     }
 }

@@ -11,8 +11,8 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    public String getURL() {
-        return super.getBaseURL();
+    public void open() {
+        driver.get(getBaseURL());
     }
 
     public String getTheTitle() {

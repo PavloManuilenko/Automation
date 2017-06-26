@@ -36,25 +36,28 @@ public class FirstTestSuite {
 
     @Test
     public void verifyingTheTitleOfHomePage() {
-        driver.get(homePage.getURL());
+        homePage.open();
         homePage.isTitleCorrect(homePage.getTheTitle());
     }
 
     @Test
     public void verifyingTheTitleOfForumPage() {
-        driver.get(forumPage.getURL());
+        //driver.get(forumPage.getURL());
+        forumPage.open();
         forumPage.isTitleCorrect(forumPage.getTheTitle());
     }
 
     @Test
     public void verifyingTheTitleOfNewsFeedPage() {
-        driver.get(newsFeedPage.getURL());
+        //driver.get(newsFeedPage.getURL());
+        newsFeedPage.open();
         newsFeedPage.isTitleCorrect(newsFeedPage.getTheTitle());
     }
 
     @Test
     public void verifyingOfTopPanelIsVisible() {
-        driver.get(homePage.getURL());
+        //driver.get(homePage.getURL());
+        homePage.open();
         Assert.assertTrue(homePage.isTopPanelVisible());
     }
 
@@ -78,7 +81,7 @@ public class FirstTestSuite {
 
     @Test
     public void countingTopicsOnForumPage() {
-        driver.get(forumPage.getURL());
+        forumPage.open();
         System.out.println("There are " + forumPage.countTopicsOnThePage() + " topics on one Forum page");
     }
 
@@ -90,19 +93,19 @@ public class FirstTestSuite {
 
     @Test
     public void countingEventsInTheBlock() {
-        driver.get(newsFeedPage.getURL());
+        newsFeedPage.open();
         System.out.println("There are " + newsFeedPage.countEventsInTheBlock() + " events in the block");
     }
 
     @Test
     public void gettingEventsDateAndCityFromTheBlock() {
-        driver.get(newsFeedPage.getURL());
+        newsFeedPage.open();
         newsFeedPage.soutEventsDateAndCityFromTheBlock();
     }
 
     @Test
     public void gettingListOfEventsDates() {
-        driver.get(newsFeedPage.getURL());
+        newsFeedPage.open();
         ArrayList<String> eventsDates= newsFeedPage.getListOfEventsDates();
 
         for (int i = 0; i < eventsDates.size(); i++) {

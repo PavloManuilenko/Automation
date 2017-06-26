@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import static org.junit.Assert.assertEquals;
 
-public class BasePage {
+public abstract class BasePage {
 
     private static final String urlOfDOU = "https://dou.ua/";
 
@@ -18,12 +18,14 @@ public class BasePage {
         return urlOfDOU;
     }
 
+    public abstract void open();
+
     public void isTitleCorrect(String title) {
         assertEquals("Wrong title of the Page!", title, driver.getTitle());
     }
 
     public void openThePageFromTopPanel(By linkOfThePageOnTopPanel) {
-        driver.get(urlOfDOU);
+        open();
         driver.findElement(linkOfThePageOnTopPanel).click();
     }
 

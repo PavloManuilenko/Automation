@@ -21,8 +21,8 @@ public class ForumPage extends BasePage{
         super(driver);
     }
 
-    public String getURL() {
-        return urlOfForum;
+    public void open() {
+        driver.get(urlOfForum);
     }
 
     public String getTheTitle() {
@@ -39,7 +39,7 @@ public class ForumPage extends BasePage{
 
     public void openArticleInTheForum(int numOfTheArticle) {
         setNumOfAnArticleInTheForum(numOfTheArticle);
-        driver.get(getURL());
+        open();
         new WebDriverWait(driver, 5)
                 .until(ExpectedConditions.presenceOfElementLocated(specificArticleInTheForum));
 
@@ -55,7 +55,7 @@ public class ForumPage extends BasePage{
     public int countTopicsOnThePage() {
         List<WebElement> arrOfTopics = new ArrayList<WebElement>();
 
-        driver.get(getURL());
+        open();
         arrOfTopics = driver.findElements(articlesInTheForum);
         return arrOfTopics.size();
     }
