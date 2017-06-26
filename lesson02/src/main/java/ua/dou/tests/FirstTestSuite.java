@@ -42,21 +42,18 @@ public class FirstTestSuite {
 
     @Test
     public void verifyingTheTitleOfForumPage() {
-        //driver.get(forumPage.getURL());
         forumPage.open();
         forumPage.isTitleCorrect(forumPage.getTheTitle());
     }
 
     @Test
     public void verifyingTheTitleOfNewsFeedPage() {
-        //driver.get(newsFeedPage.getURL());
         newsFeedPage.open();
         newsFeedPage.isTitleCorrect(newsFeedPage.getTheTitle());
     }
 
     @Test
     public void verifyingOfTopPanelIsVisible() {
-        //driver.get(homePage.getURL());
         homePage.open();
         Assert.assertTrue(homePage.isTopPanelVisible());
     }
