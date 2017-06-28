@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bfc47d8-4c6d-4b97-8fd9-c99354b3030a" name="Default" comment="" />
+    <list default="true" id="3bfc47d8-4c6d-4b97-8fd9-c99354b3030a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/BasePage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/BasePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/ForumPage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/ForumPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/dou/tests/FirstTestSuite.java" afterPath="$PROJECT_DIR$/src/main/java/ua/dou/tests/FirstTestSuite.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,10 +23,11 @@
       <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="425">
+              <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
                 <element signature="method#openThePageFromTopPanel#0;class#BasePage#0" expanded="false" />
+                <element signature="method#waitPresenceOfElement#0;class#BasePage#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -29,13 +36,9 @@
       <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="200">
+              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -43,12 +46,22 @@
       <file leaf-file-name="NewsFeedPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="305">
+              <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
               <folding>
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#843#844#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+                <element signature="e#919#920#0" expanded="true" />
+                <element signature="e#977#978#0" expanded="true" />
                 <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
-                <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+                <element signature="method#getListOfEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+                <element signature="e#1383#1391#0" expanded="true" />
                 <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+                <element signature="e#1927#1935#0" expanded="true" />
                 <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
               </folding>
             </state>
@@ -58,8 +71,8 @@
       <file leaf-file-name="ForumPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/ForumPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="405">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
                 <element signature="method#setNumOfAnArticleInTheForum#0;class#ForumPage#0" expanded="false" />
                 <element signature="method#openArticleInTheForum#0;class#ForumPage#0" expanded="false" />
@@ -73,10 +86,9 @@
       <file leaf-file-name="FirstTestSuite.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/tests/FirstTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="55" column="47" lean-forward="false" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+            <state relative-caret-position="450">
+              <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
               <folding>
-                <element signature="method#setUp#0;class#FirstTestSuite#0" expanded="false" />
                 <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
                 <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
                 <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
@@ -125,10 +137,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/forumPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/BasePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/ForumPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/dou/tests/FirstTestSuite.java" />
       </list>
     </option>
@@ -162,10 +174,105 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ua" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ua" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pageobjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -187,7 +294,7 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.FirstTestSuite">
-    <configuration default="false" name="FirstTestSuite.countingTopicsOnForumPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FirstTestSuite.verifyingTheTitleOfHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ua.dou.tests.*" />
@@ -199,7 +306,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ua.dou.tests" />
       <option name="MAIN_CLASS_NAME" value="ua.dou.tests.FirstTestSuite" />
-      <option name="METHOD_NAME" value="countingTopicsOnForumPage" />
+      <option name="METHOD_NAME" value="verifyingTheTitleOfHomePage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -213,7 +320,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="FirstTestSuite.countingEventsInTheBlock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FirstTestSuite.gettingTheNameOfTheFirstArticleInForum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ua.dou.tests.*" />
@@ -225,7 +332,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ua.dou.tests" />
       <option name="MAIN_CLASS_NAME" value="ua.dou.tests.FirstTestSuite" />
-      <option name="METHOD_NAME" value="countingEventsInTheBlock" />
+      <option name="METHOD_NAME" value="gettingTheNameOfTheFirstArticleInForum" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -467,8 +574,8 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.countingTopicsOnForumPage" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.countingEventsInTheBlock" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.verifyingTheTitleOfHomePage" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.gettingTheNameOfTheFirstArticleInForum" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.gettingEventsDateAndCityFromTheBlock" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.gettingListOfEventsDates" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTestSuite" />
@@ -476,10 +583,10 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTestSuite" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.gettingListOfEventsDates" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.gettingEventsDateAndCityFromTheBlock" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.countingEventsInTheBlock" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.countingTopicsOnForumPage" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.verifyingTheTitleOfHomePage" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.gettingListOfEventsDates" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.gettingEventsDateAndCityFromTheBlock" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTestSuite.gettingTheNameOfTheFirstArticleInForum" />
       </list>
     </recent_temporary>
   </component>
@@ -533,35 +640,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTestSuite - 2017.06.26 at 14h 07m 52s.xml">
+    <history-entry file="FirstTestSuite - 2017.06.28 at 13h 34m 38s.xml">
       <configuration name="FirstTestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTestSuite_countingEventsInTheBlock - 2017.06.26 at 13h 41m 59s.xml">
-      <configuration name="FirstTestSuite.countingEventsInTheBlock" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTestSuite_gettingEventsDateAndCityFromTheBlock - 2017.06.26 at 13h 43m 20s.xml">
+    <history-entry file="FirstTestSuite_gettingEventsDateAndCityFromTheBlock - 2017.06.28 at 12h 49m 09s.xml">
       <configuration name="FirstTestSuite.gettingEventsDateAndCityFromTheBlock" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTestSuite_gettingListOfEventsDates - 2017.06.26 at 13h 43m 46s.xml">
+    <history-entry file="FirstTestSuite_gettingEventsDateAndCityFromTheBlock - 2017.06.28 at 13h 07m 12s.xml">
+      <configuration name="FirstTestSuite.gettingEventsDateAndCityFromTheBlock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTestSuite_gettingListOfEventsDates - 2017.06.28 at 12h 56m 00s.xml">
       <configuration name="FirstTestSuite.gettingListOfEventsDates" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTestSuite_gettingListOfEventsDates - 2017.06.26 at 13h 44m 31s.xml">
+    <history-entry file="FirstTestSuite_gettingListOfEventsDates - 2017.06.28 at 13h 03m 40s.xml">
       <configuration name="FirstTestSuite.gettingListOfEventsDates" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTestSuite_gettingListOfEventsDates - 2017.06.26 at 13h 45m 36s.xml">
+    <history-entry file="FirstTestSuite_gettingListOfEventsDates - 2017.06.28 at 13h 07m 26s.xml">
       <configuration name="FirstTestSuite.gettingListOfEventsDates" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTestSuite_gettingListOfEventsDates - 2017.06.26 at 13h 54m 48s.xml">
-      <configuration name="FirstTestSuite.gettingListOfEventsDates" configurationId="JUnit" />
+    <history-entry file="FirstTestSuite_gettingTheNameOfTheFirstArticleInForum - 2017.06.28 at 12h 21m 40s.xml">
+      <configuration name="FirstTestSuite.gettingTheNameOfTheFirstArticleInForum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTestSuite_gettingListOfEventsDates - 2017.06.26 at 14h 00m 48s.xml">
-      <configuration name="FirstTestSuite.gettingListOfEventsDates" configurationId="JUnit" />
+    <history-entry file="FirstTestSuite_gettingTheNameOfTheFirstArticleInForum - 2017.06.28 at 12h 22m 13s.xml">
+      <configuration name="FirstTestSuite.gettingTheNameOfTheFirstArticleInForum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTestSuite_gettingListOfEventsDates - 2017.06.26 at 14h 03m 12s.xml">
-      <configuration name="FirstTestSuite.gettingListOfEventsDates" configurationId="JUnit" />
+    <history-entry file="FirstTestSuite_verifyingOfTopPanelIsVisible - 2017.06.28 at 12h 13m 55s.xml">
+      <configuration name="FirstTestSuite.verifyingOfTopPanelIsVisible" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTestSuite_gettingListOfEventsDates - 2017.06.26 at 14h 03m 24s.xml">
-      <configuration name="FirstTestSuite.gettingListOfEventsDates" configurationId="JUnit" />
+    <history-entry file="FirstTestSuite_verifyingTheTitleOfHomePage - 2017.06.28 at 13h 28m 46s.xml">
+      <configuration name="FirstTestSuite.verifyingTheTitleOfHomePage" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -602,7 +709,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -621,6 +728,7 @@
           <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="method#openThePageFromTopPanel#0;class#BasePage#0" expanded="false" />
+            <element signature="method#waitPresenceOfElement#0;class#BasePage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -629,11 +737,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -642,9 +746,19 @@
         <state relative-caret-position="153">
           <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
             <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
-            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1383#1391#0" expanded="true" />
             <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1927#1935#0" expanded="true" />
             <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
           </folding>
         </state>
@@ -676,7 +790,6 @@
         <state relative-caret-position="136">
           <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
           <folding>
-            <element signature="method#setUp#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
@@ -699,6 +812,7 @@
           <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="method#openThePageFromTopPanel#0;class#BasePage#0" expanded="false" />
+            <element signature="method#waitPresenceOfElement#0;class#BasePage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -707,11 +821,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -733,9 +843,19 @@
         <state relative-caret-position="153">
           <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
             <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
-            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1383#1391#0" expanded="true" />
             <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1927#1935#0" expanded="true" />
             <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
           </folding>
         </state>
@@ -746,7 +866,6 @@
         <state relative-caret-position="357">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="method#setUp#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
@@ -777,6 +896,7 @@
           <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="method#openThePageFromTopPanel#0;class#BasePage#0" expanded="false" />
+            <element signature="method#waitPresenceOfElement#0;class#BasePage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -786,9 +906,19 @@
         <state relative-caret-position="153">
           <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
             <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
-            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1383#1391#0" expanded="true" />
             <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1927#1935#0" expanded="true" />
             <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
           </folding>
         </state>
@@ -798,11 +928,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -832,7 +958,6 @@
         <state relative-caret-position="68">
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding>
-            <element signature="method#setUp#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
@@ -855,6 +980,7 @@
           <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="method#openThePageFromTopPanel#0;class#BasePage#0" expanded="false" />
+            <element signature="method#waitPresenceOfElement#0;class#BasePage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -863,11 +989,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -876,9 +998,19 @@
         <state relative-caret-position="153">
           <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
             <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
-            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1383#1391#0" expanded="true" />
             <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1927#1935#0" expanded="true" />
             <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
           </folding>
         </state>
@@ -902,7 +1034,6 @@
         <state relative-caret-position="527">
           <caret line="49" column="5" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
-            <element signature="method#setUp#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
@@ -925,6 +1056,7 @@
           <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="method#openThePageFromTopPanel#0;class#BasePage#0" expanded="false" />
+            <element signature="method#waitPresenceOfElement#0;class#BasePage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -933,11 +1065,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -946,9 +1074,19 @@
         <state relative-caret-position="153">
           <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
           <folding>
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
             <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
-            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1383#1391#0" expanded="true" />
             <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1927#1935#0" expanded="true" />
             <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
           </folding>
         </state>
@@ -972,7 +1110,6 @@
         <state relative-caret-position="867">
           <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
-            <element signature="method#setUp#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
@@ -993,11 +1130,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,9 +1139,19 @@
         <state relative-caret-position="119">
           <caret line="7" column="85" lean-forward="false" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
           <folding>
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
             <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
-            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1383#1391#0" expanded="true" />
             <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1927#1935#0" expanded="true" />
             <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
           </folding>
         </state>
@@ -1020,6 +1163,7 @@
           <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding>
             <element signature="method#openThePageFromTopPanel#0;class#BasePage#0" expanded="false" />
+            <element signature="method#waitPresenceOfElement#0;class#BasePage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1042,7 +1186,6 @@
         <state relative-caret-position="493">
           <caret line="51" column="54" lean-forward="false" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
           <folding>
-            <element signature="method#setUp#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />
@@ -1063,11 +1206,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,9 +1215,19 @@
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
             <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
-            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1383#1391#0" expanded="true" />
             <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1927#1935#0" expanded="true" />
             <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
           </folding>
         </state>
@@ -1109,11 +1258,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,9 +1267,19 @@
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
             <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
-            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1383#1391#0" expanded="true" />
             <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1927#1935#0" expanded="true" />
             <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
           </folding>
         </state>
@@ -1158,13 +1313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1177,32 +1325,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="59" column="42" lean-forward="false" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="137">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#869#1062#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="425">
+          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding>
             <element signature="method#openThePageFromTopPanel#0;class#BasePage#0" expanded="false" />
+            <element signature="method#waitPresenceOfElement#0;class#BasePage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="method#getListOfEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1383#1391#0" expanded="true" />
+            <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
+            <element signature="e#1927#1935#0" expanded="true" />
+            <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/ForumPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="405">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="method#setNumOfAnArticleInTheForum#0;class#ForumPage#0" expanded="false" />
             <element signature="method#openArticleInTheForum#0;class#ForumPage#0" expanded="false" />
@@ -1212,37 +1402,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="method#countEventsInTheBlock#0;class#NewsFeedPage#0" expanded="false" />
-            <element signature="method#soutEventsDateAndCityFromTheBlock#0;class#NewsFeedPage#0" expanded="false" />
-            <element signature="method#getListOfEventsDates#0;class#NewsFeedPage#0" expanded="false" />
-            <element signature="method#pickTheDate#0;class#NewsFeedPage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/dou/tests/FirstTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="55" column="47" lean-forward="false" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+        <state relative-caret-position="450">
+          <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
           <folding>
-            <element signature="method#setUp#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfHomePage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfForumPage#0;class#FirstTestSuite#0" expanded="false" />
             <element signature="method#verifyingTheTitleOfNewsFeedPage#0;class#FirstTestSuite#0" expanded="false" />

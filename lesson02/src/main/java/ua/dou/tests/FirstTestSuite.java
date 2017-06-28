@@ -11,6 +11,9 @@ import ua.dou.pageobjects.HomePage;
 import ua.dou.pageobjects.NewsFeedPage;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 public class FirstTestSuite {
     private static WebDriver driver;
@@ -32,24 +35,25 @@ public class FirstTestSuite {
     @After
     public void driverQuit() {
         driver.quit();
+
     }
 
     @Test
     public void verifyingTheTitleOfHomePage() {
         homePage.open();
-        homePage.isTitleCorrect(homePage.getTheTitle());
+        assertEquals("Wrong title of the Page!", homePage.getTheTitle(), driver.getTitle());
     }
 
     @Test
     public void verifyingTheTitleOfForumPage() {
         forumPage.open();
-        forumPage.isTitleCorrect(forumPage.getTheTitle());
+        assertEquals("Wrong title of the Page!", forumPage.getTheTitle(), driver.getTitle());
     }
 
     @Test
     public void verifyingTheTitleOfNewsFeedPage() {
         newsFeedPage.open();
-        newsFeedPage.isTitleCorrect(newsFeedPage.getTheTitle());
+        assertEquals("Wrong title of the Page!", newsFeedPage.getTheTitle(), driver.getTitle());
     }
 
     @Test
@@ -60,14 +64,14 @@ public class FirstTestSuite {
 
     @Test
     public void openingForumFromTopPanel() {
-        forumPage.openThePageFromTopPanel(forumPage.getForumFromTopPanel());
-        forumPage.isTitleCorrect(forumPage.getTheTitle());
+        forumPage.openFromTopPanel();
+        assertEquals("Wrong title of the Page!", forumPage.getTheTitle(), driver.getTitle());
     }
 
     @Test
     public void openingNewsFeedFromTopPanel() {
-        newsFeedPage.openThePageFromTopPanel(newsFeedPage.getLentaFromTopPanel());
-        newsFeedPage.isTitleCorrect(newsFeedPage.getTheTitle());
+        newsFeedPage.openFromTopPanel();
+        assertEquals("Wrong title of the Page!", newsFeedPage.getTheTitle(), driver.getTitle());
     }
 
     @Test
@@ -97,7 +101,11 @@ public class FirstTestSuite {
     @Test
     public void gettingEventsDateAndCityFromTheBlock() {
         newsFeedPage.open();
-        newsFeedPage.soutEventsDateAndCityFromTheBlock();
+        List<String> listOfEventsDateAndCity = newsFeedPage.getListOfEventsDateAndCityFromTheBlock();
+
+        for (String str : listOfEventsDateAndCity) {
+            System.out.println(str);
+        }
     }
 
     @Test

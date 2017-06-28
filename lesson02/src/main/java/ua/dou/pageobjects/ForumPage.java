@@ -3,10 +3,6 @@ package ua.dou.pageobjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class ForumPage extends BasePage{
@@ -29,8 +25,8 @@ public class ForumPage extends BasePage{
         return titleOfForumPage;
     }
 
-    public By getForumFromTopPanel() {
-        return ForumFromTopPanel;
+    public void openFromTopPanel() {
+        openThePageFromTopPanel(ForumFromTopPanel);
     }
 
     private static void setNumOfAnArticleInTheForum(int numOfTheArticle) {
@@ -40,20 +36,17 @@ public class ForumPage extends BasePage{
     public void openArticleInTheForum(int numOfTheArticle) {
         setNumOfAnArticleInTheForum(numOfTheArticle);
         open();
-        new WebDriverWait(driver, 5)
-                .until(ExpectedConditions.presenceOfElementLocated(specificArticleInTheForum));
-
+        waitPresenceOfElement(specificArticleInTheForum, 5);
         driver.findElement(specificArticleInTheForum).click();
     }
 
     public String getNameOfAnArticle() {
-        new WebDriverWait(driver, 5)
-                .until(ExpectedConditions.presenceOfElementLocated(nameOfAnArticle));
+        waitPresenceOfElement(nameOfAnArticle, 5);
         return driver.findElement(nameOfAnArticle).getText();
     }
 
     public int countTopicsOnThePage() {
-        List<WebElement> arrOfTopics = new ArrayList<WebElement>();
+        List<WebElement> arrOfTopics;
 
         open();
         arrOfTopics = driver.findElements(articlesInTheForum);

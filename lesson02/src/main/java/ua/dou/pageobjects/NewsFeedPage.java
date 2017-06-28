@@ -3,8 +3,6 @@ package ua.dou.pageobjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,48 +26,42 @@ public class NewsFeedPage extends BasePage {
         return titleOfNewsFeed;
     }
 
-    public By getLentaFromTopPanel() {
-        return lentaFromTopPanel;
+    public void openFromTopPanel() {
+        openThePageFromTopPanel(lentaFromTopPanel);
     }
 
     public int countEventsInTheBlock() {
-        List<WebElement> arrOfEvents = new ArrayList<WebElement>();
+        List<WebElement> arrOfEvents;
 
-        new WebDriverWait(driver, 5)
-                .until(ExpectedConditions.presenceOfElementLocated(eventBlock));
-
+        waitPresenceOfElement(eventBlock, 5);
         arrOfEvents = driver.findElements(eventFromBlock);
-
         return arrOfEvents.size();
     }
 
-    public void soutEventsDateAndCityFromTheBlock() {
-        List<WebElement> arrOfEvents;
+    public ArrayList<String> getListOfEventsDateAndCityFromTheBlock() {
+        List<WebElement> listOfEvents;
+        ArrayList<String> listOfEventsDateAndCity = new ArrayList<String>();
 
-        new WebDriverWait(driver, 5)
-                .until(ExpectedConditions.presenceOfElementLocated(eventBlock));
+        waitPresenceOfElement(eventBlock, 5);
 
-        arrOfEvents = driver.findElements(eventFromBlock);
+        listOfEvents = driver.findElements(eventFromBlock);
 
-        for (WebElement elm : arrOfEvents) {
-            System.out.println(elm.findElement(By.className("date")).getText());
+        for (int i = 0; i < listOfEvents.size(); i++) {
+            listOfEventsDateAndCity.add(listOfEvents.get(i).findElement(By.className("date")).getText());
         }
+        return listOfEventsDateAndCity;
     }
 
     public ArrayList<String> getListOfEventsDates() {
-        List<WebElement> arrOfEvents;
-        ArrayList<String> arrOfDateFromWEB = new ArrayList<String>();
+        List<String> listOfEventsDateAndCity = getListOfEventsDateAndCityFromTheBlock();
+        ArrayList<String> arrOfDateFromEvents = new ArrayList<String>();
 
-        new WebDriverWait(driver, 5)
-                .until(ExpectedConditions.presenceOfElementLocated(eventBlock));
+        waitPresenceOfElement(eventBlock, 5);
 
-        arrOfEvents = driver.findElements(eventFromBlock);
-
-        for (int i = 0; i < arrOfEvents.size(); i++) {
-            arrOfDateFromWEB.add(arrOfEvents.get(i).findElement(By.className("date")).getText());
-            arrOfDateFromWEB.set(i, pickTheDate(arrOfDateFromWEB.get(i), ','));
+        for (int i = 0; i < listOfEventsDateAndCity.size(); i++) {
+            arrOfDateFromEvents.add(pickTheDate(listOfEventsDateAndCity.get(i), ','));
         }
-        return arrOfDateFromWEB;
+        return arrOfDateFromEvents;
     }
 
     private String pickTheDate(String sourceStr, char lastChar) {
