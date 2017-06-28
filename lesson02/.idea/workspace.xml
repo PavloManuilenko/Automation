@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3bfc47d8-4c6d-4b97-8fd9-c99354b3030a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/BasePage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/BasePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/ForumPage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/ForumPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/dou/pageobjects/NewsFeedPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/dou/tests/FirstTestSuite.java" afterPath="$PROJECT_DIR$/src/main/java/ua/dou/tests/FirstTestSuite.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -636,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498475431217</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactor of all lesson 2">
+      <created>1498646332916</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1498646332916</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -705,7 +708,8 @@
     <MESSAGE value="Add first test into lesson 2" />
     <MESSAGE value="rename locator into lesson 2" />
     <MESSAGE value="Refactor of open method in lesson 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor of open method in lesson 2" />
+    <MESSAGE value="Refactor of all lesson 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor of all lesson 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
