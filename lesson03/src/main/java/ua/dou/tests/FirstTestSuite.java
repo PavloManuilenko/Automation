@@ -19,7 +19,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class FirstTestSuite {
-    private static WebDriver driver;
+    private WebDriver driver;
     private HomePage homePage;
     private ForumPage forumPage;
     private NewsFeedPage newsFeedPage;
