@@ -19,7 +19,6 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class FirstTestSuite {
-    private Property property;
     private static WebDriver driver;
     private HomePage homePage;
     private ForumPage forumPage;
@@ -27,7 +26,7 @@ public class FirstTestSuite {
 
     @Before
     public void setUp() throws InterruptedException {
-        property = ParserCSV.parseTheProperty("./src/main/resources/properties.csv", ";");
+        Property property = ParserCSV.parseTheProperty("./src/main/resources/properties.csv", ";");
         driver = BasePage.makeTheDriver(property);
         homePage = new HomePage(driver);
         forumPage = new ForumPage(driver);

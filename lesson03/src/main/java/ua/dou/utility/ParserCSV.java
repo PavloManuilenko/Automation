@@ -3,8 +3,6 @@ package ua.dou.utility;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class ParserCSV {
     public static Property parseTheProperty(String fileCSV, String separator) {
@@ -17,8 +15,12 @@ public class ParserCSV {
                     String[] fields = line.split(separator);
 
                     String typeOfDriver = fields[0];
+                    String pathToChromeDriver = fields[1];
+                    String pathToFirefoxDriver = fields[2];
 
                     property.setTypeOfDriver(typeOfDriver);
+                    property.setPathToChromeDriver(pathToChromeDriver);
+                    property.setPathToFirefoxDriver(pathToFirefoxDriver);
                 }
             }
         } catch (IOException e) {

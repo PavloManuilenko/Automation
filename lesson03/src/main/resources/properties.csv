@@ -1,2 +1,2 @@
-driver;
-ChromeDriver;
+driver to use;path to ChromeDriver;path to FirefoxDriver;
+ChromeDriver;./src/main/resources/chromedriver.exe;./src/main/resources/geckodriver.exe;

@@ -2,7 +2,6 @@ package ua.dou.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HomePage extends BasePage {
     private static final String titleOfHomePage = "Сообщество программистов | DOU";
