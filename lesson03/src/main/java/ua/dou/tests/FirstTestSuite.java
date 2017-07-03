@@ -5,13 +5,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import ua.dou.pageobjects.BasePage;
 import ua.dou.pageobjects.ForumPage;
 import ua.dou.pageobjects.HomePage;
 import ua.dou.pageobjects.NewsFeedPage;
-import ua.dou.utility.ParserCSV;
-import ua.dou.utility.Property;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,8 +23,7 @@ public class FirstTestSuite {
 
     @Before
     public void setUp() throws InterruptedException {
-        Property property = ParserCSV.parseTheProperty("./src/main/resources/properties.csv", ";");
-        driver = BasePage.makeTheDriver(property);
+        driver = BasePage.makeTheDriver("./src/main/resources/config.properties");
         homePage = new HomePage(driver);
         forumPage = new ForumPage(driver);
         newsFeedPage = new NewsFeedPage(driver);

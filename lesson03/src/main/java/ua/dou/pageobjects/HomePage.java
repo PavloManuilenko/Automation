@@ -22,5 +22,4 @@ public class HomePage extends BasePage {
     public boolean isTopPanelVisible() {
         return driver.findElement(topPanel).isDisplayed();
     }
-
 }
