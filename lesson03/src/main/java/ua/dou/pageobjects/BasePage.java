@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -38,15 +39,11 @@ public abstract class BasePage {
     }
 
     public static WebDriver makeTheDriver(String pathToProperties) {
-
-        FileInputStream fileInputStream;
         Properties property = new Properties();
-
         WebDriver driver = null;
 
-        try {
-            fileInputStream = new FileInputStream(pathToProperties);
-            property.load(fileInputStream);
+        try (FileReader reader = new FileReader(pathToProperties)) {
+            property.load(reader);
 
             String typeOfDriver = property.getProperty("driverToUse");
             String pathToChromeDriver = property.getProperty("pathToChromeDriver");
