@@ -6,9 +6,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import ua.dou.utility.Property;
 
-import static org.junit.Assert.assertEquals;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
 
 public abstract class BasePage {
 
@@ -35,17 +38,35 @@ public abstract class BasePage {
                 .until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
-    public static WebDriver makeTheDriver(Property property) {
-        WebDriver driver;
+    public static WebDriver makeTheDriver(String pathToProperties) {
+        Properties property = new Properties();
+        WebDriver driver = null;
 
-        if ("ChromeDriver".equals(property.getTypeOfDriver())) {
+        try (FileReader reader = new FileReader(pathToProperties)) {
+            property.load(reader);
+
+            String typeOfDriver = property.getProperty("driverToUse");
+            String pathToChromeDriver = property.getProperty("pathToChromeDriver");
+            String pathToFirefoxDriver = property.getProperty("pathToFirefoxDriver");
+
+            if (null != typeOfDriver) {
+                if ("ChromeDriver".equals(typeOfDriver)) {
+                    System.setProperty("webdriver.chrome.driver", pathToChromeDriver);
+                    return driver = new ChromeDriver();
+                }
+                else {
+                    System.setProperty("webdriver.gecko.driver", pathToFirefoxDriver);
+                    return driver = new FirefoxDriver();
+                }
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            //**** Default: make ChromeDriver if property wasn't found
             System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
-            return driver = new ChromeDriver();
+            driver = new ChromeDriver();
+            //****
         }
-        else {
-            System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
-            return driver = new FirefoxDriver();
-        }
-
+        return driver;
     }
 }
