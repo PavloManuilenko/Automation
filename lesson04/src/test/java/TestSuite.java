@@ -5,6 +5,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 public class TestSuite {
     WebDriver driver;
     private StartPage startPage;
@@ -23,44 +26,40 @@ public class TestSuite {
     }
 
     @Test
-    public void openGoogle() {
+    public void openGoogleStartPage() {
         startPage.open();
-
+        assertEquals("Wrong Title!", "Google", driver.getTitle());
     }
 
     @Test
-    public void testOfJS() throws InterruptedException {
+    public void verifyingTitleOfStartPageViaJS() {
         startPage.open();
+        String title = (String) ((JavascriptExecutor)driver).executeScript( "return document.title;");
+        assertEquals("Wrong Title!", "Google", title);
+    }
+
+    @Test
+    public void comparingTextFromJSAlertAndExpected() {
         String text = "TEST";
-        startPage.executeJS(driver, "alert('TEST');");
-        String actual = startPage.getAlertFromPageAfterTimeout(5).getText();
-        if (actual.equals(text)){
-            System.out.println("OK");
-        } else {
-            throw new RuntimeException("value " + actual);
-        }
-    }
-
-    @Test
-    public void testOfJS2() throws InterruptedException {
         startPage.open();
-        String res = (String) ((JavascriptExecutor)driver).executeScript( "return document.title;");
-        System.out.println(res);
+        startPage.executeJS(driver, "alert('TEST');");
+        String actual = startPage.getAlertFromThePageWithTimeout(5).getText();
+        assertEquals("The text is different!", text, actual);
     }
 
-
-
     @Test
-    public void testOfSearching() {
+    public void testOfSearchingOnce() {
         startPage.open();
         startPage.search("QA / QC");
+        assertTrue("There is no result of searching", startPage.isResultStatsAppeared());
     }
 
     @Test
-    public void testOfGoinbGackAndForwardAfterSearching() {
+    public void testOfGoingBackAndForwardAfterSearching() {
         startPage.open();
         startPage.search("QA / QC");
         startPage.goBack();
         startPage.goForward();
+        assertTrue("There is no result of searching", startPage.isResultStatsAppeared());
     }
 }
