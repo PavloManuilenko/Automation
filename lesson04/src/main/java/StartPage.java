@@ -1,7 +1,4 @@
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -29,8 +26,12 @@ public class StartPage {
         driver.navigate().forward();
     }
 
-    public void executeJS(WebDriver driver, String script) {
+    public void executeJS(String script) {
         ((JavascriptExecutor)driver).executeScript(script);
+    }
+
+    public String getCurrentTitleViaJS() {
+        return (String)((JavascriptExecutor)driver).executeScript( "return document.title;");
     }
 
     public Alert getAlertFromThePageWithTimeout(int timeOutInSeconds) {
@@ -56,5 +57,7 @@ public class StartPage {
         return driver.findElement(resultStats).isDisplayed();
     }
 
-
+    public WebElement getWebElementFromCurrentPage(String locatorCSS) {
+        return (WebElement)((JavascriptExecutor)driver).executeScript("return document.querySelector('" + locatorCSS +"')");
+    }
 }
