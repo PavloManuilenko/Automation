@@ -1,4 +1,5 @@
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -6,6 +7,7 @@ public class StartPage {
    private WebDriver driver;
    private By searchField = new By.ByXPath(".//input[@name = 'q']");
    private By resultStats = new By.ByXPath(".//div[@id = 'resultStats']");
+   private By firstRresult = new By.ByXPath("(//h3)[1]/a");
 
     private static final String url = "https://www.google.com.ua";
 
@@ -39,25 +41,39 @@ public class StartPage {
                 .until(ExpectedConditions.alertIsPresent());
     }
 
-    public void waitOfElementPresence(By locator, int timeOutInSeconds) {
+    public void waitOfElementPresenceByLocator(By locator, int timeOutInSeconds) {
         new WebDriverWait(driver, timeOutInSeconds)
                 .until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
+
     public void search(String text) {
-        waitOfElementPresence(searchField, 5);
+        waitOfElementPresenceByLocator(searchField, 5);
         driver.findElement(searchField).click();
         driver.findElement(searchField).sendKeys(text);
         driver.findElement(searchField).submit();
-        waitOfElementPresence(resultStats, 5);
+        waitOfElementPresenceByLocator(resultStats, 5);
     }
 
     public boolean isResultStatsAppeared() {
-        waitOfElementPresence(resultStats, 5);
+        waitOfElementPresenceByLocator(resultStats, 5);
         return driver.findElement(resultStats).isDisplayed();
     }
 
-    public WebElement getWebElementFromCurrentPage(String locatorCSS) {
+    public WebElement getWebElementFromCurrentPageViaCSSLocator(String locatorCSS) {
         return (WebElement)((JavascriptExecutor)driver).executeScript("return document.querySelector('" + locatorCSS +"')");
+    }
+
+    public void actionSearch(String text) {
+        Actions builder = new Actions(driver);
+        WebElement searchField = getWebElementFromCurrentPageViaCSSLocator("input[name=q]");
+        builder.click(searchField).sendKeys(text).sendKeys(Keys.ENTER).build().perform();
+    }
+
+    public void actionOpenFirstSearchResult() {
+        Actions builder = new Actions(driver);
+        waitOfElementPresenceByLocator(firstRresult, 5);
+        WebElement firstSearchResult = getWebElementFromCurrentPageViaCSSLocator(".r>a");
+        builder.click(firstSearchResult).build().perform();
     }
 }

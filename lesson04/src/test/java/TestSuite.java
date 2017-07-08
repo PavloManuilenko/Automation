@@ -61,8 +61,16 @@ public class TestSuite {
         WebElement requiredSearchResult;
         startPage.open();
         startPage.search("ISTQB");
-        requiredSearchResult = startPage.getWebElementFromCurrentPage("a[href = \"http://www.istqb.org/\"]");
+        requiredSearchResult = startPage.getWebElementFromCurrentPageViaCSSLocator("a[href = \"http://www.istqb.org/\"]");
         requiredSearchResult.click();
+        assertEquals("Wrong Title!", "Certifying Software Testers Worldwide - ISTQB® International Software Testing Qualifications Board", startPage.getCurrentTitleViaJS());
+    }
+
+    @Test
+    public void openingFirstResultOfSearchUsingActions() {
+        startPage.open();
+        startPage.actionSearch("ISTQB");
+        startPage.actionOpenFirstSearchResult();
         assertEquals("Wrong Title!", "Certifying Software Testers Worldwide - ISTQB® International Software Testing Qualifications Board", startPage.getCurrentTitleViaJS());
     }
 
