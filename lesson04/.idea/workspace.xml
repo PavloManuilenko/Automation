@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a245d53b-8d96-4ebd-874f-5e4ddaf54385" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StartPage.java" afterPath="$PROJECT_DIR$/src/main/java/StartPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestSuite.java" afterPath="$PROJECT_DIR$/src/test/java/TestSuite.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -525,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499764272349</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add waiting Of Pagination On Search Result">
+      <created>1499767905571</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1499767905571</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
