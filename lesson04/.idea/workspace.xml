@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a245d53b-8d96-4ebd-874f-5e4ddaf54385" name="Default" comment="">
+    <list default="true" id="a245d53b-8d96-4ebd-874f-5e4ddaf54385" name="Default" comment="Add">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StartPage.java" afterPath="$PROJECT_DIR$/src/main/java/StartPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestSuite.java" afterPath="$PROJECT_DIR$/src/test/java/TestSuite.java" />
@@ -18,32 +18,35 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="StartPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StartPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/StartPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+            <state relative-caret-position="130">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#open#0;class#StartPage#0" expanded="false" />
                 <element signature="method#getCurrentTitleViaJS#0;class#StartPage#0" expanded="false" />
                 <element signature="method#getAlertFromThePageWithTimeout#0;class#StartPage#0" expanded="false" />
                 <element signature="method#waitOfElementPresenceByLocator#0;class#StartPage#0" expanded="false" />
+                <element signature="method#waitForDocumentReady#0;class#StartPage#0" expanded="false" />
+                <element signature="e#1693#1954#0" expanded="true" />
+                <element signature="e#1953#1954#0" expanded="true" />
+                <element signature="method#waitOfPaginationOnSearchResult#0;class#StartPage#0" expanded="false" />
                 <element signature="method#search#0;class#StartPage#0" expanded="false" />
                 <element signature="method#isResultStatsAppeared#0;class#StartPage#0" expanded="false" />
                 <element signature="method#getWebElementFromCurrentPageViaCSSLocator#0;class#StartPage#0" expanded="false" />
                 <element signature="method#actionSearch#0;class#StartPage#0" expanded="false" />
-                <element signature="method#actionOpenFirstSearchResult#0;class#StartPage#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSuite.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestSuite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="69" column="57" lean-forward="false" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="57" />
+            <state relative-caret-position="529">
+              <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#setUp#0;class#TestSuite#0" expanded="false" />
@@ -53,7 +56,6 @@
                 <element signature="method#testingOfSearchingOnce#0;class#TestSuite#0" expanded="false" />
                 <element signature="method#testingOfGoingBackAndForwardAfterSearching#0;class#TestSuite#0" expanded="false" />
                 <element signature="method#testingOfOpenRequiredSearchResultViaJS#0;class#TestSuite#0" expanded="false" />
-                <element signature="method#openingFirstResultOfSearchUsingActions#0;class#TestSuite#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -85,8 +87,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/StartPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestSuite.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StartPage.java" />
       </list>
     </option>
   </component>
@@ -120,9 +122,88 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -143,7 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestSuite">
+  <component name="RunManager" selected="JUnit.TestSuite.openingFirstResultOfSearchUsingActions">
     <configuration default="false" name="TestSuite.comparingTextFromJSAlertAndExpected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="lesson04" />
@@ -407,8 +488,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestSuite" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestSuite.openingFirstResultOfSearchUsingActions" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestSuite.openingFirstResultOfSearchUsingActions" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestSuite" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.TestSuite.testingOfOpenRequiredSearchResultViaJS" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.TestSuite.verifyingTitleOfStartPageViaJS" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.TestSuite.comparingTextFromJSAlertAndExpected" />
@@ -429,21 +510,17 @@
       <option name="presentableId" value="Default" />
       <updated>1499183095098</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add test using actions">
+      <created>1499518920522</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1499518920523</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSuite - 2017.07.08 at 16h 01m 24s.xml">
-      <configuration name="TestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSuite_openingFirstResultOfSearchUsingActions - 2017.07.08 at 15h 22m 23s.xml">
-      <configuration name="TestSuite.openingFirstResultOfSearchUsingActions" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSuite_openingFirstResultOfSearchUsingActions - 2017.07.08 at 15h 30m 06s.xml">
-      <configuration name="TestSuite.openingFirstResultOfSearchUsingActions" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSuite_openingFirstResultOfSearchUsingActions - 2017.07.08 at 15h 31m 51s.xml">
-      <configuration name="TestSuite.openingFirstResultOfSearchUsingActions" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestSuite_openingFirstResultOfSearchUsingActions - 2017.07.08 at 15h 33m 57s.xml">
       <configuration name="TestSuite.openingFirstResultOfSearchUsingActions" configurationId="JUnit" />
     </history-entry>
@@ -460,6 +537,18 @@
       <configuration name="TestSuite.openingFirstResultOfSearchUsingActions" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestSuite_openingFirstResultOfSearchUsingActions - 2017.07.08 at 15h 59m 27s.xml">
+      <configuration name="TestSuite.openingFirstResultOfSearchUsingActions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSuite_openingFirstResultOfSearchUsingActions - 2017.07.11 at 11h 58m 17s.xml">
+      <configuration name="TestSuite.openingFirstResultOfSearchUsingActions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSuite_openingFirstResultOfSearchUsingActions - 2017.07.11 at 11h 59m 02s.xml">
+      <configuration name="TestSuite.openingFirstResultOfSearchUsingActions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSuite_openingFirstResultOfSearchUsingActions - 2017.07.11 at 11h 59m 38s.xml">
+      <configuration name="TestSuite.openingFirstResultOfSearchUsingActions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSuite_openingFirstResultOfSearchUsingActions - 2017.07.11 at 12h 09m 49s.xml">
       <configuration name="TestSuite.openingFirstResultOfSearchUsingActions" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -492,6 +581,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add test using actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test using actions" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="15" />
@@ -505,6 +598,84 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/StartPage.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#open#0;class#StartPage#0" expanded="false" />
+            <element signature="method#getCurrentTitleViaJS#0;class#StartPage#0" expanded="false" />
+            <element signature="method#getAlertFromThePageWithTimeout#0;class#StartPage#0" expanded="false" />
+            <element signature="method#waitOfElementPresenceByLocator#0;class#StartPage#0" expanded="false" />
+            <element signature="method#waitForDocumentReady#0;class#StartPage#0" expanded="false" />
+            <element signature="e#1693#1954#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="method#waitOfPaginationOnSearchResult#0;class#StartPage#0" expanded="false" />
+            <element signature="method#search#0;class#StartPage#0" expanded="false" />
+            <element signature="method#isResultStatsAppeared#0;class#StartPage#0" expanded="false" />
+            <element signature="method#getWebElementFromCurrentPageViaCSSLocator#0;class#StartPage#0" expanded="false" />
+            <element signature="method#actionSearch#0;class#StartPage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1175">
+          <caret line="74" column="17" lean-forward="false" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#driverQuit#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#verifyingTitleOfStartPageViaJS#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#comparingTextFromJSAlertAndExpected#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#testingOfSearchingOnce#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#testingOfGoingBackAndForwardAfterSearching#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#testingOfOpenRequiredSearchResultViaJS#0;class#TestSuite#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#open#0;class#StartPage#0" expanded="false" />
+            <element signature="method#getCurrentTitleViaJS#0;class#StartPage#0" expanded="false" />
+            <element signature="method#getAlertFromThePageWithTimeout#0;class#StartPage#0" expanded="false" />
+            <element signature="method#waitOfElementPresenceByLocator#0;class#StartPage#0" expanded="false" />
+            <element signature="method#waitForDocumentReady#0;class#StartPage#0" expanded="false" />
+            <element signature="e#1693#1954#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="method#waitOfPaginationOnSearchResult#0;class#StartPage#0" expanded="false" />
+            <element signature="method#search#0;class#StartPage#0" expanded="false" />
+            <element signature="method#isResultStatsAppeared#0;class#StartPage#0" expanded="false" />
+            <element signature="method#getWebElementFromCurrentPageViaCSSLocator#0;class#StartPage#0" expanded="false" />
+            <element signature="method#actionSearch#0;class#StartPage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="69" column="57" lean-forward="false" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#driverQuit#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#verifyingTitleOfStartPageViaJS#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#comparingTextFromJSAlertAndExpected#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#testingOfSearchingOnce#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#testingOfGoingBackAndForwardAfterSearching#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#testingOfOpenRequiredSearchResultViaJS#0;class#TestSuite#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
           <folding>
@@ -513,11 +684,14 @@
             <element signature="method#getCurrentTitleViaJS#0;class#StartPage#0" expanded="false" />
             <element signature="method#getAlertFromThePageWithTimeout#0;class#StartPage#0" expanded="false" />
             <element signature="method#waitOfElementPresenceByLocator#0;class#StartPage#0" expanded="false" />
+            <element signature="method#waitForDocumentReady#0;class#StartPage#0" expanded="false" />
+            <element signature="e#1693#1954#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="method#waitOfPaginationOnSearchResult#0;class#StartPage#0" expanded="false" />
             <element signature="method#search#0;class#StartPage#0" expanded="false" />
             <element signature="method#isResultStatsAppeared#0;class#StartPage#0" expanded="false" />
             <element signature="method#getWebElementFromCurrentPageViaCSSLocator#0;class#StartPage#0" expanded="false" />
             <element signature="method#actionSearch#0;class#StartPage#0" expanded="false" />
-            <element signature="method#actionOpenFirstSearchResult#0;class#StartPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -535,7 +709,6 @@
             <element signature="method#testingOfSearchingOnce#0;class#TestSuite#0" expanded="false" />
             <element signature="method#testingOfGoingBackAndForwardAfterSearching#0;class#TestSuite#0" expanded="false" />
             <element signature="method#testingOfOpenRequiredSearchResultViaJS#0;class#TestSuite#0" expanded="false" />
-            <element signature="method#openingFirstResultOfSearchUsingActions#0;class#TestSuite#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -550,11 +723,14 @@
             <element signature="method#getCurrentTitleViaJS#0;class#StartPage#0" expanded="false" />
             <element signature="method#getAlertFromThePageWithTimeout#0;class#StartPage#0" expanded="false" />
             <element signature="method#waitOfElementPresenceByLocator#0;class#StartPage#0" expanded="false" />
+            <element signature="method#waitForDocumentReady#0;class#StartPage#0" expanded="false" />
+            <element signature="e#1693#1954#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="method#waitOfPaginationOnSearchResult#0;class#StartPage#0" expanded="false" />
             <element signature="method#search#0;class#StartPage#0" expanded="false" />
             <element signature="method#isResultStatsAppeared#0;class#StartPage#0" expanded="false" />
             <element signature="method#getWebElementFromCurrentPageViaCSSLocator#0;class#StartPage#0" expanded="false" />
             <element signature="method#actionSearch#0;class#StartPage#0" expanded="false" />
-            <element signature="method#actionOpenFirstSearchResult#0;class#StartPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -572,7 +748,6 @@
             <element signature="method#testingOfSearchingOnce#0;class#TestSuite#0" expanded="false" />
             <element signature="method#testingOfGoingBackAndForwardAfterSearching#0;class#TestSuite#0" expanded="false" />
             <element signature="method#testingOfOpenRequiredSearchResultViaJS#0;class#TestSuite#0" expanded="false" />
-            <element signature="method#openingFirstResultOfSearchUsingActions#0;class#TestSuite#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -587,11 +762,14 @@
             <element signature="method#getCurrentTitleViaJS#0;class#StartPage#0" expanded="false" />
             <element signature="method#getAlertFromThePageWithTimeout#0;class#StartPage#0" expanded="false" />
             <element signature="method#waitOfElementPresenceByLocator#0;class#StartPage#0" expanded="false" />
+            <element signature="method#waitForDocumentReady#0;class#StartPage#0" expanded="false" />
+            <element signature="e#1693#1954#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="method#waitOfPaginationOnSearchResult#0;class#StartPage#0" expanded="false" />
             <element signature="method#search#0;class#StartPage#0" expanded="false" />
             <element signature="method#isResultStatsAppeared#0;class#StartPage#0" expanded="false" />
             <element signature="method#getWebElementFromCurrentPageViaCSSLocator#0;class#StartPage#0" expanded="false" />
             <element signature="method#actionSearch#0;class#StartPage#0" expanded="false" />
-            <element signature="method#actionOpenFirstSearchResult#0;class#StartPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -609,7 +787,6 @@
             <element signature="method#testingOfSearchingOnce#0;class#TestSuite#0" expanded="false" />
             <element signature="method#testingOfGoingBackAndForwardAfterSearching#0;class#TestSuite#0" expanded="false" />
             <element signature="method#testingOfOpenRequiredSearchResultViaJS#0;class#TestSuite#0" expanded="false" />
-            <element signature="method#openingFirstResultOfSearchUsingActions#0;class#TestSuite#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -624,11 +801,14 @@
             <element signature="method#getCurrentTitleViaJS#0;class#StartPage#0" expanded="false" />
             <element signature="method#getAlertFromThePageWithTimeout#0;class#StartPage#0" expanded="false" />
             <element signature="method#waitOfElementPresenceByLocator#0;class#StartPage#0" expanded="false" />
+            <element signature="method#waitForDocumentReady#0;class#StartPage#0" expanded="false" />
+            <element signature="e#1693#1954#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="method#waitOfPaginationOnSearchResult#0;class#StartPage#0" expanded="false" />
             <element signature="method#search#0;class#StartPage#0" expanded="false" />
             <element signature="method#isResultStatsAppeared#0;class#StartPage#0" expanded="false" />
             <element signature="method#getWebElementFromCurrentPageViaCSSLocator#0;class#StartPage#0" expanded="false" />
             <element signature="method#actionSearch#0;class#StartPage#0" expanded="false" />
-            <element signature="method#actionOpenFirstSearchResult#0;class#StartPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -646,7 +826,6 @@
             <element signature="method#testingOfSearchingOnce#0;class#TestSuite#0" expanded="false" />
             <element signature="method#testingOfGoingBackAndForwardAfterSearching#0;class#TestSuite#0" expanded="false" />
             <element signature="method#testingOfOpenRequiredSearchResultViaJS#0;class#TestSuite#0" expanded="false" />
-            <element signature="method#openingFirstResultOfSearchUsingActions#0;class#TestSuite#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -703,33 +882,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StartPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.4.0/selenium-api-3.4.0-sources.jar!/org/openqa/selenium/JavascriptExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#open#0;class#StartPage#0" expanded="false" />
-            <element signature="method#getCurrentTitleViaJS#0;class#StartPage#0" expanded="false" />
-            <element signature="method#getAlertFromThePageWithTimeout#0;class#StartPage#0" expanded="false" />
-            <element signature="method#waitOfElementPresenceByLocator#0;class#StartPage#0" expanded="false" />
-            <element signature="method#search#0;class#StartPage#0" expanded="false" />
-            <element signature="method#isResultStatsAppeared#0;class#StartPage#0" expanded="false" />
-            <element signature="method#getWebElementFromCurrentPageViaCSSLocator#0;class#StartPage#0" expanded="false" />
-            <element signature="method#actionSearch#0;class#StartPage#0" expanded="false" />
-            <element signature="method#actionOpenFirstSearchResult#0;class#StartPage#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-1745">
+          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="69" column="57" lean-forward="false" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="57" />
+        <state relative-caret-position="529">
+          <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#TestSuite#0" expanded="false" />
@@ -739,7 +906,28 @@
             <element signature="method#testingOfSearchingOnce#0;class#TestSuite#0" expanded="false" />
             <element signature="method#testingOfGoingBackAndForwardAfterSearching#0;class#TestSuite#0" expanded="false" />
             <element signature="method#testingOfOpenRequiredSearchResultViaJS#0;class#TestSuite#0" expanded="false" />
-            <element signature="method#openingFirstResultOfSearchUsingActions#0;class#TestSuite#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#open#0;class#StartPage#0" expanded="false" />
+            <element signature="method#getCurrentTitleViaJS#0;class#StartPage#0" expanded="false" />
+            <element signature="method#getAlertFromThePageWithTimeout#0;class#StartPage#0" expanded="false" />
+            <element signature="method#waitOfElementPresenceByLocator#0;class#StartPage#0" expanded="false" />
+            <element signature="method#waitForDocumentReady#0;class#StartPage#0" expanded="false" />
+            <element signature="e#1693#1954#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="method#waitOfPaginationOnSearchResult#0;class#StartPage#0" expanded="false" />
+            <element signature="method#search#0;class#StartPage#0" expanded="false" />
+            <element signature="method#isResultStatsAppeared#0;class#StartPage#0" expanded="false" />
+            <element signature="method#getWebElementFromCurrentPageViaCSSLocator#0;class#StartPage#0" expanded="false" />
+            <element signature="method#actionSearch#0;class#StartPage#0" expanded="false" />
           </folding>
         </state>
       </provider>

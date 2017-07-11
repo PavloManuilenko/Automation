@@ -1,5 +1,6 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -8,6 +9,7 @@ public class StartPage {
    private By searchField = new By.ByXPath(".//input[@name = 'q']");
    private By resultStats = new By.ByXPath(".//div[@id = 'resultStats']");
    private By firstRresult = new By.ByXPath("(//h3)[1]/a");
+   private By pagination = new By.ByXPath(".//*[@id='navcnt']");
 
     private static final String url = "https://www.google.com.ua";
 
@@ -42,10 +44,22 @@ public class StartPage {
     }
 
     public void waitOfElementPresenceByLocator(By locator, int timeOutInSeconds) {
-        new WebDriverWait(driver, timeOutInSeconds)
-                .until(ExpectedConditions.presenceOfElementLocated(locator));
+        new WebDriverWait(driver, timeOutInSeconds).until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
+    public void waitForDocumentReady(int timeOutInSeconds) {
+        new WebDriverWait(driver, timeOutInSeconds).until(new ExpectedCondition<Boolean>() {
+            public Boolean apply(WebDriver d) {
+                JavascriptExecutor js = (JavascriptExecutor) d;
+                return js.executeScript("return document.readyState").equals("complete");
+
+            }
+        });
+    }
+
+    public void waitOfPaginationOnSearchResult(int timeOutInSeconds) {
+        new WebDriverWait(driver, timeOutInSeconds).until(ExpectedConditions.presenceOfElementLocated(pagination));
+    }
 
     public void search(String text) {
         waitOfElementPresenceByLocator(searchField, 5);
@@ -72,7 +86,8 @@ public class StartPage {
 
     public void actionOpenFirstSearchResult() {
         Actions builder = new Actions(driver);
-        waitOfElementPresenceByLocator(firstRresult, 5);
+        //waitForDocumentReady(5);
+        waitOfPaginationOnSearchResult(5);
         WebElement firstSearchResult = getWebElementFromCurrentPageViaCSSLocator(".r>a");
         builder.click(firstSearchResult).build().perform();
     }

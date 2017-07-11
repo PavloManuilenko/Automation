@@ -71,7 +71,8 @@ public class TestSuite {
         startPage.open();
         startPage.actionSearch("ISTQB");
         startPage.actionOpenFirstSearchResult();
-        assertEquals("Wrong Title!", "Certifying Software Testers Worldwide - ISTQB® International Software Testing Qualifications Board", startPage.getCurrentTitleViaJS());
+        assertEquals("Wrong Title!", "Certifying Software Testers Worldwide - ISTQB® " +
+                "International Software Testing Qualifications Board", startPage.getCurrentTitleViaJS());
     }
 
 }
