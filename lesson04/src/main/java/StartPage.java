@@ -9,7 +9,7 @@ public class StartPage {
    private By searchField = new By.ByXPath(".//input[@name = 'q']");
    private By resultStats = new By.ByXPath(".//div[@id = 'resultStats']");
    private By firstRresult = new By.ByXPath("(//h3)[1]/a");
-   private By pagination = new By.ByXPath(".//*[@id='navcnt']");
+   private By paginationBlock = new By.ByXPath(".//*[@id='navcnt']");
 
     private static final String url = "https://www.google.com.ua";
 
@@ -52,13 +52,12 @@ public class StartPage {
             public Boolean apply(WebDriver d) {
                 JavascriptExecutor js = (JavascriptExecutor) d;
                 return js.executeScript("return document.readyState").equals("complete");
-
             }
         });
     }
 
-    public void waitOfPaginationOnSearchResult(int timeOutInSeconds) {
-        new WebDriverWait(driver, timeOutInSeconds).until(ExpectedConditions.presenceOfElementLocated(pagination));
+    public void waitOfPaginationBlockOnSearchResultPage(int timeOutInSeconds) {
+        new WebDriverWait(driver, timeOutInSeconds).until(ExpectedConditions.presenceOfElementLocated(paginationBlock));
     }
 
     public void search(String text) {
@@ -86,8 +85,6 @@ public class StartPage {
 
     public void actionOpenFirstSearchResult() {
         Actions builder = new Actions(driver);
-        //waitForDocumentReady(5);
-        waitOfPaginationOnSearchResult(5);
         WebElement firstSearchResult = getWebElementFromCurrentPageViaCSSLocator(".r>a");
         builder.click(firstSearchResult).build().perform();
     }
