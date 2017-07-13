@@ -17,7 +17,6 @@ public class TestSuite {
     public void setUp() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
         driver = new ChromeDriver();
-        //startPage = new StartPage(driver);
         startPage = PageFactory.initElements(driver, StartPage.class);
 
     }
