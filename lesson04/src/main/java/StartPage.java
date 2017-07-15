@@ -48,12 +48,11 @@ public class StartPage {
     }
 
     public void waitForDocumentReady(int timeOutInSeconds) {
-        new WebDriverWait(driver, timeOutInSeconds).until(new ExpectedCondition<Boolean>() {
-            public Boolean apply(WebDriver d) {
+        new WebDriverWait(driver, timeOutInSeconds).until((d)-> {
                 JavascriptExecutor js = (JavascriptExecutor) d;
                 return js.executeScript("return document.readyState").equals("complete");
             }
-        });
+        );
     }
 
     public void waitOfPaginationBlockOnSearchResultPage(int timeOutInSeconds) {
