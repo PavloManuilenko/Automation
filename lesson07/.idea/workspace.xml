@@ -1,7 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fbdc877-a1d2-4d57-b769-efb1793fecbf" name="Default" comment="add lesson7" />
+    <list default="true" id="4fbdc877-a1d2-4d57-b769-efb1793fecbf" name="Default" comment="add lesson7">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.html" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.txt" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.xml" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.html" afterPath="$PROJECT_DIR$/target/jbehave/BeforeStories.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.txt" afterPath="$PROJECT_DIR$/target/jbehave/BeforeStories.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.xml" afterPath="$PROJECT_DIR$/target/jbehave/BeforeStories.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.test_steps.html" afterPath="$PROJECT_DIR$/target/jbehave/stories.test_steps.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.test_steps.stats" afterPath="$PROJECT_DIR$/target/jbehave/stories.test_steps.stats" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.test_steps.txt" afterPath="$PROJECT_DIR$/target/jbehave/stories.test_steps.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.test_steps.xml" afterPath="$PROJECT_DIR$/target/jbehave/stories.test_steps.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" afterPath="$PROJECT_DIR$/target/jbehave/storyDurations.props" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.html" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.txt.html" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.txt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.xml.html" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.xml.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.html" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.txt.html" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.txt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.xml.html" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.xml.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/META-INF/maven/org.codehaus.xsite/xsite-resources/pom.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/META-INF/maven/org.codehaus.xsite/xsite-resources/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/META-INF/maven/org.codehaus.xsite/xsite-resources/pom.xml" afterPath="$PROJECT_DIR$/target/jbehave/view/META-INF/maven/org.codehaus.xsite/xsite-resources/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-html-output.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-html-output.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-maps.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-maps.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-report-decorated.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-report-decorated.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-report-non-decorated.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-report-non-decorated.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-reports.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-reports.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-views.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-views.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-xml-output.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-xml-output.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/sh.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/sh.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_de.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_de.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_en.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_es.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_fr.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_fr.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_hu.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_hu.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_it.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_it.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_no.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_no.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_pl.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_pl.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_pt.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_pt.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_ru.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_ru_sbt.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_ru_sbt.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_sv.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_sv.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_tr.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_tr.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_zh_TW.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_zh_TW.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" afterPath="$PROJECT_DIR$/target/jbehave/view/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/mootools-1.2/menu-fx.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/mootools-1.2/menu-fx.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/mootools-1.2/mootools-core.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/mootools-1.2/mootools-core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/mootools-1.2/mootools-fx.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/mootools-1.2/mootools-fx.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shAutoloader.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shAutoloader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushAS3.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushAS3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushAppleScript.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushAppleScript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushBash.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushBash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushCSharp.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushCSharp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushColdFusion.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushColdFusion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushCpp.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushCpp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushCss.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushCss.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushDelphi.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushDelphi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushDiff.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushDiff.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushErlang.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushErlang.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushGroovy.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushGroovy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushJScript.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushJScript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushJava.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushJava.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushJavaFX.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushJavaFX.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPerl.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPerl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPhp.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPhp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPlain.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPlain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPowerShell.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPowerShell.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPython.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPython.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushRuby.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushRuby.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushSass.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushSass.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushScala.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushScala.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushSql.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushSql.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushVb.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushVb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushXml.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushXml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shCore.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shCore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shLegacy.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shLegacy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" afterPath="$PROJECT_DIR$/target/jbehave/view/reports.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.txt.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.txt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.xml.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.xml.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/jbehave-core.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/jbehave-core.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/jbehave.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/jbehave.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCore.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCore.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreDefault.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreDefault.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreDjango.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreDjango.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreEclipse.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreEclipse.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreEmacs.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreEmacs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreFadeToGrey.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreFadeToGrey.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreMDUltra.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreMDUltra.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreMidnight.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreMidnight.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreRDark.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreRDark.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeDefault.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeDefault.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeDjango.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeDjango.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeEclipse.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeEclipse.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeEmacs.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeEmacs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeFadeToGrey.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeFadeToGrey.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeMDUltra.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeMDUltra.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeMidnight.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeMidnight.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeRDark.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeRDark.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +115,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="test_steps.story" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_steps.story" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/stories/test_steps.story">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -33,6 +135,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="WebDriverStories.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/story/WebDriverStories.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="28" column="71" lean-forward="true" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -47,6 +159,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/stories/test_steps.story" />
       </list>
     </option>
   </component>
@@ -56,6 +169,34 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="lesson07" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="lesson07" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
@@ -79,7 +220,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -217,6 +357,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,6 +365,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -377,6 +519,28 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -450,30 +614,36 @@
     <history-entry file="WebDriverStories - 2017.08.02 at 19h 39m 52s.xml">
       <configuration name="WebDriverStories" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="WebDriverStories - 2017.08.02 at 20h 10m 23s.xml">
+      <configuration name="WebDriverStories" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebDriverStories - 2017.08.02 at 20h 13m 01s.xml">
+      <configuration name="WebDriverStories" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="0" width="1934" height="1030" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953313" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26330075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26818675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -528,7 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/story/WebDriverStories.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/stories/test_steps.story">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -537,15 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/story/WebDriverStories.java" />
-    <entry file="file://$PROJECT_DIR$/target/classes/steps/TestSteps.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/steps/TestSteps.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -559,6 +719,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/story/WebDriverStories.java" />
+    <entry file="file://$PROJECT_DIR$/target/classes/steps/TestSteps.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/steps/TestSteps.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/test_steps.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/story/WebDriverStories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="28" column="71" lean-forward="true" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
           <folding />
         </state>
       </provider>
