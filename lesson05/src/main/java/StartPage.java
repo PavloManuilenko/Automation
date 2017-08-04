@@ -22,10 +22,7 @@ public class StartPage {
 
     public StartPage(WebDriver driver) {
         this.driver = driver;
-    }
-
-    public void init(WebDriver driver) {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(this.driver, this);
     }
 
     public void open() {

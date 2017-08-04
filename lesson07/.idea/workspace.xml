@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fbdc877-a1d2-4d57-b769-efb1793fecbf" name="Default" comment="add lesson7">
+    <list default="true" id="4fbdc877-a1d2-4d57-b769-efb1793fecbf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.html" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.txt" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.txt" />
@@ -604,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501692108427</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add lesson7">
+      <created>1501694022603</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1501694022603</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
