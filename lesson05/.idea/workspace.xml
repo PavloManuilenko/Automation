@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9397242f-58be-4870-996e-3c10ac449420" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StartPage.java" afterPath="$PROJECT_DIR$/src/main/java/StartPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestSuite.java" afterPath="$PROJECT_DIR$/src/test/java/TestSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lesson07/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../lesson07/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +18,8 @@
       <file leaf-file-name="StartPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/StartPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+            <state relative-caret-position="250">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="method#StartPage#0;class#StartPage#0" expanded="false" />
                 <element signature="method#open#0;class#StartPage#0" expanded="false" />
@@ -416,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499936677530</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactor of lesson 5">
+      <created>1501847690624</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1501847690624</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -482,7 +486,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Lesson 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Lesson 5" />
+    <MESSAGE value="Refactor of lesson 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor of lesson 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -674,8 +679,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/StartPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        <state relative-caret-position="250">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="method#StartPage#0;class#StartPage#0" expanded="false" />
             <element signature="method#open#0;class#StartPage#0" expanded="false" />

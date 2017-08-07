@@ -3,24 +3,27 @@ package steps;
 import org.jbehave.core.annotations.*;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import pageobjects.CoachPage;
 import pageobjects.OurTeam;
-import story.WebDriverStories;
+
+import java.util.ArrayList;
 
 public class TestSteps {
 
-    static WebDriver driver;
-    OurTeam teamPage;
+    private static WebDriver driver;
+    private OurTeam teamPage;
+    private CoachPage coachPage;
 
-    @BeforeScenario
+    @BeforeStory()
     public void driverStart() {
         System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
         driver = new FirefoxDriver();
         teamPage = new OurTeam(driver);
+        coachPage = new CoachPage(driver);
     }
 
-    @AfterScenario
+    @AfterStory
     public void drivertStop() {
         driver.quit();
     }
@@ -30,9 +33,20 @@ public class TestSteps {
         teamPage.navigateFromMainPage();
     }
 
+    @When("I open $coach page")
+    public void openCoachPage(String coach) {
+        teamPage.openCoachPage(coach);
+    }
+
     @Then("$coach has position $position")
-    public void searchCoachInListOfTheTeam(String coach, String position) {
+    @Alias("<coach> has position <position>")
+    public void searchCoachInListOfTheTeam(@Named("coach") String coach, @Named("position") String position) {
         Assert.assertEquals(teamPage.getCoachPositionViaName(coach), position);
+    }
+
+    @Then("Coach has $curs")
+    public void verifyCourses(String curs){
+        Assert.assertTrue(coachPage.hasCurs(curs));
     }
 
 }

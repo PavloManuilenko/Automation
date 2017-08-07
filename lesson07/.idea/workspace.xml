@@ -2,106 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fbdc877-a1d2-4d57-b769-efb1793fecbf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/CoachPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/stories/coaches_courses.story" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/stories/coaches_positions.story" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/stories/test_steps.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/stories/test_steps.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/stories.test_steps.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/stories.test_steps.stats" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/stories.test_steps.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/stories.test_steps.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.txt.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.xml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.txt.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.xml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.stats.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.txt.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.xml.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lesson05/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../lesson05/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.html" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.txt" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.xml" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.html" afterPath="$PROJECT_DIR$/target/jbehave/BeforeStories.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.txt" afterPath="$PROJECT_DIR$/target/jbehave/BeforeStories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.xml" afterPath="$PROJECT_DIR$/target/jbehave/BeforeStories.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.test_steps.html" afterPath="$PROJECT_DIR$/target/jbehave/stories.test_steps.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.test_steps.stats" afterPath="$PROJECT_DIR$/target/jbehave/stories.test_steps.stats" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.test_steps.txt" afterPath="$PROJECT_DIR$/target/jbehave/stories.test_steps.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.test_steps.xml" afterPath="$PROJECT_DIR$/target/jbehave/stories.test_steps.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" afterPath="$PROJECT_DIR$/target/jbehave/storyDurations.props" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.html" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.txt.html" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.txt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.xml.html" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.xml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.html" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.txt.html" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.txt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.xml.html" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.xml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/META-INF/maven/org.codehaus.xsite/xsite-resources/pom.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/META-INF/maven/org.codehaus.xsite/xsite-resources/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/META-INF/maven/org.codehaus.xsite/xsite-resources/pom.xml" afterPath="$PROJECT_DIR$/target/jbehave/view/META-INF/maven/org.codehaus.xsite/xsite-resources/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-html-output.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-html-output.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-maps.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-maps.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-report-decorated.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-report-decorated.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-report-non-decorated.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-report-non-decorated.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-reports.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-reports.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-views.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-views.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-xml-output.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/jbehave-xml-output.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/ftl/sh.ftl" afterPath="$PROJECT_DIR$/target/jbehave/view/ftl/sh.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_de.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_de.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_en.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_es.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_es.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_fr.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_fr.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_hu.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_hu.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_it.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_it.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_no.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_no.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_pl.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_pl.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_pt.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_pt.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_ru.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_ru_sbt.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_ru_sbt.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_sv.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_sv.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_tr.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_tr.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_zh_TW.properties" afterPath="$PROJECT_DIR$/target/jbehave/view/i18n/keywords_zh_TW.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" afterPath="$PROJECT_DIR$/target/jbehave/view/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/mootools-1.2/menu-fx.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/mootools-1.2/menu-fx.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/mootools-1.2/mootools-core.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/mootools-1.2/mootools-core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/mootools-1.2/mootools-fx.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/mootools-1.2/mootools-fx.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shAutoloader.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shAutoloader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushAS3.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushAS3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushAppleScript.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushAppleScript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushBash.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushBash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushCSharp.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushCSharp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushColdFusion.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushColdFusion.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushCpp.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushCpp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushCss.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushCss.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushDelphi.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushDelphi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushDiff.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushDiff.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushErlang.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushErlang.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushGroovy.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushGroovy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushJScript.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushJScript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushJava.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushJava.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushJavaFX.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushJavaFX.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPerl.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPerl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPhp.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPhp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPlain.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPlain.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPowerShell.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPowerShell.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPython.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushPython.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushRuby.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushRuby.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushSass.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushSass.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushScala.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushScala.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushSql.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushSql.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushVb.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushVb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushXml.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shBrushXml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shCore.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shCore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shLegacy.js" afterPath="$PROJECT_DIR$/target/jbehave/view/js/sh-3.0.83/shLegacy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" afterPath="$PROJECT_DIR$/target/jbehave/view/reports.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.txt.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.txt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.xml.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.test_steps.xml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/jbehave-core.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/jbehave-core.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/jbehave.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/jbehave.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCore.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCore.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreDefault.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreDefault.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreDjango.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreDjango.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreEclipse.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreEclipse.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreEmacs.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreEmacs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreFadeToGrey.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreFadeToGrey.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreMDUltra.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreMDUltra.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreMidnight.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreMidnight.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreRDark.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shCoreRDark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeDefault.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeDefault.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeDjango.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeDjango.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeEclipse.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeEclipse.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeEmacs.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeEmacs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeFadeToGrey.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeFadeToGrey.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeMDUltra.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeMDUltra.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeMidnight.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeMidnight.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeRDark.css" afterPath="$PROJECT_DIR$/target/jbehave/view/style/sh-3.0.83/shThemeRDark.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/OurTeam.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/OurTeam.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/steps/TestSteps.java" afterPath="$PROJECT_DIR$/src/main/java/steps/TestSteps.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -115,37 +51,69 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="test_steps.story" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/stories/test_steps.story">
+      <file leaf-file-name="coaches_positions.story" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/stories/coaches_positions.story">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="coaches_courses.story" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/stories/coaches_courses.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="150">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="15" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebDriverStories.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/story/WebDriverStories.java">
+      <file leaf-file-name="TestSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/steps/TestSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="28" column="71" lean-forward="true" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
+            <state relative-caret-position="170">
+              <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+              <folding>
+                <element signature="e#970#971#0" expanded="true" />
+                <element signature="e#1015#1016#0" expanded="true" />
+                <element signature="e#1376#1377#0" expanded="true" />
+                <element signature="e#1434#1435#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OurTeam.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/OurTeam.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-125">
+              <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoachPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/CoachPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -160,6 +128,12 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/stories/test_steps.story" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/steps/TestSteps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/CoachPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/OurTeam.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/stories/coaches_positions.story" />
+        <option value="$PROJECT_DIR$/src/main/resources/stories/coaches_courses.story" />
       </list>
     </option>
   </component>
@@ -199,9 +173,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
-    <option name="width" value="1934" />
-    <option name="height" value="1030" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1042" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -351,6 +326,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pageobjects" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -615,37 +594,55 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WebDriverStories - 2017.08.02 at 19h 34m 16s.xml">
+    <history-entry file="WebDriverStories - 2017.08.07 at 12h 33m 00s.xml">
       <configuration name="WebDriverStories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebDriverStories - 2017.08.02 at 19h 39m 52s.xml">
+    <history-entry file="WebDriverStories - 2017.08.07 at 12h 36m 54s.xml">
       <configuration name="WebDriverStories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebDriverStories - 2017.08.02 at 20h 10m 23s.xml">
+    <history-entry file="WebDriverStories - 2017.08.07 at 12h 37m 33s.xml">
       <configuration name="WebDriverStories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebDriverStories - 2017.08.02 at 20h 13m 01s.xml">
+    <history-entry file="WebDriverStories - 2017.08.07 at 12h 38m 20s.xml">
+      <configuration name="WebDriverStories" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebDriverStories - 2017.08.07 at 12h 39m 10s.xml">
+      <configuration name="WebDriverStories" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebDriverStories - 2017.08.07 at 12h 39m 42s.xml">
+      <configuration name="WebDriverStories" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebDriverStories - 2017.08.07 at 12h 44m 05s.xml">
+      <configuration name="WebDriverStories" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebDriverStories - 2017.08.07 at 12h 45m 58s.xml">
+      <configuration name="WebDriverStories" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebDriverStories - 2017.08.07 at 12h 49m 06s.xml">
+      <configuration name="WebDriverStories" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebDriverStories - 2017.08.07 at 12h 50m 09s.xml">
       <configuration name="WebDriverStories" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="0" width="1934" height="1030" extended-state="0" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953313" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918918" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3983353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26818675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27783784" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3983353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -665,7 +662,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="add lesson7" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="19" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -673,67 +672,60 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/test_steps.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/coaches_positions.story">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/test_steps.story">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/coaches_courses.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/steps/TestSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="1150">
+          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+          <folding>
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+            <element signature="e#1376#1377#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/test_steps.story">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/OurTeam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        <state relative-caret-position="600">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/story/WebDriverStories.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/test_steps.story">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/CoachPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="350">
+          <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/story/WebDriverStories.java" />
-    <entry file="file://$PROJECT_DIR$/target/classes/steps/TestSteps.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/steps/TestSteps.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/test_steps.story">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/coaches_positions.story">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -751,8 +743,152 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/story/WebDriverStories.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
+        <state relative-caret-position="700">
           <caret line="28" column="71" lean-forward="true" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/coaches_positions.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/coaches_positions.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/coaches_positions.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/story/WebDriverStories.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/coaches_positions.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/story/WebDriverStories.java" />
+    <entry file="file://$PROJECT_DIR$/target/classes/steps/TestSteps.class" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbehave/jbehave-core/4.1.1/jbehave-core-4.1.1.jar!/org/jbehave/core/embedder/PerformableTree.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="327" column="0" lean-forward="false" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/story/WebDriverStories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbehave/jbehave-core/4.1.1/jbehave-core-4.1.1.jar!/org/jbehave/core/steps/StepCreator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="789" column="0" lean-forward="false" selection-start-line="789" selection-start-column="0" selection-end-line="789" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/steps/TestSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding>
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+            <element signature="e#1376#1377#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/CoachPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/OurTeam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/coaches_courses.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/coaches_positions.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
           <folding />
         </state>
       </provider>

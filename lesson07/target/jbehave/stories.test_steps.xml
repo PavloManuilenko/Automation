@@ -1,6 +1,0 @@
-<story path="stories/test_steps.story" title="Story: Lookup a definition">
-<scenario keyword="Scenario:" title="Looking for specific coach">
-<step outcome="successful">Given Navigate to Team page from Home page</step>
-<step outcome="successful">Then <parameter>Артем Карпов</parameter> has position <parameter>тренер</parameter></step>
-</scenario>
-</story>

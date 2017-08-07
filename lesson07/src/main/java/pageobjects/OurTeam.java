@@ -25,9 +25,10 @@ public class OurTeam extends BasePage {
         driver.get(urlOfTeamPage);
     }
 
-    public void navigateFromMainPage() throws InterruptedException {
+    public void navigateFromMainPage() {
         driver.get(getBaseURL());
         Actions builder = new Actions(driver);
+        waitPresenceOfElement(aboutUsTopMenu, 2);
         builder.moveToElement(driver.findElement(aboutUsTopMenu)).build().perform();
         builder.moveToElement(driver.findElement(ourTeamInAboutUsMenu)).click().build().perform();
         waitPresenceOfElement(areaWithAllCoaches, 2);
@@ -40,15 +41,29 @@ public class OurTeam extends BasePage {
     public String getCoachPositionViaName(String coachName) {
         getListOfTeam();
         String coachPosition = "Unknown";
-        for (WebElement li : namsOfAllCoaches){
+        for (WebElement li : namsOfAllCoaches) {
             String nameAndPosition = li.getText();
             int separator = nameAndPosition.indexOf("\n");
             String name = nameAndPosition.substring(0, separator);
-            String position = nameAndPosition.substring(separator+1);
-            if (coachName.equals(name)){
+            String position = nameAndPosition.substring(separator + 1);
+            if (coachName.equals(name)) {
                 coachPosition = position;
             }
         }
         return coachPosition;
+    }
+
+    public void openCoachPage(String coachName) {
+        driver.findElement(By.xpath(".//*[@class=\"name\"][contains(text(),'" + coachName + "')]")).click();
+        /*getListOfTeam();
+        waitPresenceOfElement(coaches, 2);
+        for (WebElement coach : namsOfAllCoaches) {
+            String nameAndPosition = coach.getText();
+            int separator = nameAndPosition.indexOf("\n");
+            String name = nameAndPosition.substring(0, separator);
+            if (coachName.equals(name)) {
+                coach.click();
+            }
+        }*/
     }
 }
