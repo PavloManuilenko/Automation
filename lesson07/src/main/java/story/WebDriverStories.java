@@ -34,7 +34,7 @@ public class WebDriverStories extends JUnitStories {
 
     public WebDriverStories() {
         configuredEmbedder().embedderControls().doGenerateViewAfterStories(true).doIgnoreFailureInStories(true)
-                .doIgnoreFailureInView(true).useThreads(2).useStoryTimeoutInSecs(60);
+                .doIgnoreFailureInView(true).useThreads(1).useStoryTimeoutInSecs(60);
     }
 
     @Override

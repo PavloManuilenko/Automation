@@ -19,8 +19,6 @@ public class TestSteps {
     public void driverStart() {
         System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
         driver = new FirefoxDriver();
-        teamPage = new OurTeam(driver);
-        coachPage = new CoachPage(driver);
     }
 
     @AfterStory
@@ -30,12 +28,14 @@ public class TestSteps {
 
     @Given("Navigate to Team page from Home page")
     public void openTeamPage() throws InterruptedException {
+        teamPage = new OurTeam(driver);
         teamPage.navigateFromMainPage();
     }
 
     @When("I open $coach page")
     public void openCoachPage(String coach) {
         teamPage.openCoachPage(coach);
+        coachPage = new CoachPage(driver);
     }
 
     @Then("$coach has position $position")
