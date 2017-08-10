@@ -8,6 +8,7 @@ import pageobjects.CoachPage;
 import pageobjects.OurTeam;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 public class TestSteps {
 
@@ -19,6 +20,7 @@ public class TestSteps {
     public void driverStart() {
         System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
         driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @AfterStory
@@ -27,15 +29,15 @@ public class TestSteps {
     }
 
     @Given("Navigate to Team page from Home page")
-    public void openTeamPage() throws InterruptedException {
+    public void openTeamPage() {
         teamPage = new OurTeam(driver);
         teamPage.navigateFromMainPage();
     }
 
     @When("I open $coach page")
     public void openCoachPage(String coach) {
-        teamPage.openCoachPage(coach);
         coachPage = new CoachPage(driver);
+        teamPage.openCoachPage(coach);
     }
 
     @Then("$coach has position $position")

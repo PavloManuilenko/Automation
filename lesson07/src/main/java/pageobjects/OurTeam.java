@@ -11,10 +11,10 @@ public class OurTeam extends BasePage {
     private static final String urlOfTeamPage = "http://skillsup.ua/about/our-team/";
     private By aboutUsTopMenu = By.xpath(".//div[@id='menu3039']");
     private By ourTeamInAboutUsMenu = By.xpath(".//a[@href='/about/our-team/']");
-    private By areaWithAllCoaches = By.xpath(".//div[@class='team-list clearfix']");
     private By coaches = By.xpath(".//div[@class='member']");
+    private By coachNames = By.xpath(".//span[@class='name']");
 
-    private List<WebElement> namsOfAllCoaches;
+    private List<WebElement> allCoaches;
 
     public OurTeam(WebDriver driver) {
         super(driver);
@@ -31,17 +31,17 @@ public class OurTeam extends BasePage {
         waitPresenceOfElement(aboutUsTopMenu, 2);
         builder.moveToElement(driver.findElement(aboutUsTopMenu)).build().perform();
         builder.moveToElement(driver.findElement(ourTeamInAboutUsMenu)).click().build().perform();
-        waitPresenceOfElement(areaWithAllCoaches, 2);
+        waitPresenceOfElement(coaches, 2);
     }
 
     public void getListOfTeam() {
-        namsOfAllCoaches = driver.findElements(coaches);
+        allCoaches = driver.findElements(coaches);
     }
 
     public String getCoachPositionViaName(String coachName) {
         getListOfTeam();
         String coachPosition = "Unknown";
-        for (WebElement li : namsOfAllCoaches) {
+        for (WebElement li : allCoaches) {
             String nameAndPosition = li.getText();
             int separator = nameAndPosition.indexOf("\n");
             String name = nameAndPosition.substring(0, separator);
@@ -54,16 +54,13 @@ public class OurTeam extends BasePage {
     }
 
     public void openCoachPage(String coachName) {
-        driver.findElement(By.xpath(".//*[@class=\"name\"][contains(text(),'" + coachName + "')]")).click();
-        /*getListOfTeam();
-        waitPresenceOfElement(coaches, 2);
-        for (WebElement coach : namsOfAllCoaches) {
-            String nameAndPosition = coach.getText();
-            int separator = nameAndPosition.indexOf("\n");
-            String name = nameAndPosition.substring(0, separator);
-            if (coachName.equals(name)) {
-                coach.click();
+        waitPresenceOfElement(coachNames, 5);
+        List<WebElement> namesOfAllCoaches = driver.findElements(coachNames);
+        for (WebElement coach : namesOfAllCoaches) {
+            String name = coach.getText().trim();
+            if (coachName.equalsIgnoreCase(name)) {
+                coach.click(); break;
             }
-        }*/
+        }
     }
 }

@@ -1,7 +1,7 @@
 #org.jbehave.core.embedder.StoryManager
-#Tue Aug 08 19:44:25 EEST 2017
-stories/coaches_courses.story=25000
-stories/coaches_positions.story=24000
+#Thu Aug 10 16:46:50 EEST 2017
+stories/coaches_courses.story=21000
+stories/coaches_positions.story=22000
 threads=1
-total=49000
-threadAverage=49000
+total=43000
+threadAverage=43000
