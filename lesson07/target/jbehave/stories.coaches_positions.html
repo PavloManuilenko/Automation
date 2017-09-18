@@ -1,0 +1,38 @@
+<div class="story">
+<h1>Story: checking positions of coaches on team page</h1>
+<div class="path">stories/coaches_positions.story</div>
+<div class="scenario">
+<h2>Scenario: verifying position for coaches</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given Navigate to Team page from Home page</div>
+<div class="step">Then &lt;coach&gt; has position &lt;position&gt;</div>
+<table>
+<thead>
+<tr>
+<th>coach</th><th>position</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Артем Карпов</td><td>тренер</td></tr>
+<tr>
+<td>Денис Питиряков</td><td>тренер</td></tr>
+<tr>
+<td>Александр Галковский</td><td>тренер, PSM, OCA</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {coach=Артем Карпов, position=тренер}</h3>
+<div class="step successful">Given Navigate to Team page from Home page</div>
+<div class="step successful">Then <span class="step parameter">Артем Карпов</span> has position <span class="step parameter">тренер</span></div>
+
+<h3 class="example">Example: {coach=Денис Питиряков, position=тренер}</h3>
+<div class="step successful">Given Navigate to Team page from Home page</div>
+<div class="step successful">Then <span class="step parameter">Денис Питиряков</span> has position <span class="step parameter">тренер</span></div>
+
+<h3 class="example">Example: {coach=Александр Галковский, position=тренер, PSM, OCA}</h3>
+<div class="step successful">Given Navigate to Team page from Home page</div>
+<div class="step successful">Then <span class="step parameter">Александр Галковский</span> has position <span class="step parameter">тренер, PSM, OCA</span></div>
+</div>
+</div>
+</div>

@@ -1,0 +1,13 @@
+<story path="stories/coaches_courses.story" title="Story: check courses for coaches">
+<scenario keyword="Scenario:" title="verifying courses of Артем">
+<step outcome="successful">Given Navigate to Team page from Home page</step>
+<step outcome="successful">When I open <parameter>Артем Карпов</parameter> page</step>
+<step outcome="successful">Then Coach has <parameter>Автоматизация тестирования ПО</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="verifying courses of Анастасия">
+<step outcome="successful">Given Navigate to Team page from Home page</step>
+<step outcome="successful">When I open <parameter>Анастасия Педоренко</parameter> page</step>
+<step outcome="successful">Then Coach has <parameter>Погружение в бизнес-анализ</parameter></step>
+<step outcome="successful">And Coach has <parameter>Погружение в Scrum</parameter></step>
+</scenario>
+</story>

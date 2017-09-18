@@ -1,0 +1,26 @@
+Story: checking positions of coaches on team page
+(stories/coaches_positions.story)
+Scenario: verifying position for coaches
+Examples:
+Given Navigate to Team page from Home page
+Then <coach> has position <position>
+
+|coach|position|
+|Артем Карпов|тренер|
+|Денис Питиряков|тренер|
+|Александр Галковский|тренер, PSM, OCA|
+
+Example: {coach=Артем Карпов, position=тренер}
+Given Navigate to Team page from Home page
+Then Артем Карпов has position тренер
+
+Example: {coach=Денис Питиряков, position=тренер}
+Given Navigate to Team page from Home page
+Then Денис Питиряков has position тренер
+
+Example: {coach=Александр Галковский, position=тренер, PSM, OCA}
+Given Navigate to Team page from Home page
+Then Александр Галковский has position тренер, PSM, OCA
+
+
+

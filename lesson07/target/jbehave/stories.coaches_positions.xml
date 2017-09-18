@@ -1,0 +1,26 @@
+<story path="stories/coaches_positions.story" title="Story: checking positions of coaches on team page">
+<scenario keyword="Scenario:" title="verifying position for coaches">
+<examples keyword="Examples:">
+<step>Given Navigate to Team page from Home page</step>
+<step>Then &lt;coach&gt; has position &lt;position&gt;</step>
+<parameters>
+<names><name>coach</name><name>position</name></names>
+<values><value>Артем Карпов</value><value>тренер</value></values>
+<values><value>Денис Питиряков</value><value>тренер</value></values>
+<values><value>Александр Галковский</value><value>тренер, PSM, OCA</value></values>
+</parameters>
+
+<example keyword="Example:">{coach=Артем Карпов, position=тренер}</example>
+<step outcome="successful">Given Navigate to Team page from Home page</step>
+<step outcome="successful">Then <parameter>Артем Карпов</parameter> has position <parameter>тренер</parameter></step>
+
+<example keyword="Example:">{coach=Денис Питиряков, position=тренер}</example>
+<step outcome="successful">Given Navigate to Team page from Home page</step>
+<step outcome="successful">Then <parameter>Денис Питиряков</parameter> has position <parameter>тренер</parameter></step>
+
+<example keyword="Example:">{coach=Александр Галковский, position=тренер, PSM, OCA}</example>
+<step outcome="successful">Given Navigate to Team page from Home page</step>
+<step outcome="successful">Then <parameter>Александр Галковский</parameter> has position <parameter>тренер, PSM, OCA</parameter></step>
+</examples>
+</scenario>
+</story>
