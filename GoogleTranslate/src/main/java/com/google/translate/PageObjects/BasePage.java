@@ -10,7 +10,7 @@ import java.net.URL;
 
 public abstract class BasePage {
 
-    private WebDriver driver;
+    protected WebDriver driver;
     private URL googleURL = new URL("https", "google.com", 443, "");
     private URL googleLanguageSettings = new URL("https", "google.com", 443, "/preferences#languages");
     private URL baseURL = new URL("https", "translate.google.com", 443, "");
@@ -28,13 +28,16 @@ public abstract class BasePage {
     @FindBy(xpath = ".//a[contains(text(), 'Google.com')]")
     private WebElement offerToUseGoogleCOM;
 
+    @FindBy(xpath = ".//a[@id='gt-appname']")
+    private WebElement appLogo;
+
     public BasePage(WebDriver driver) throws MalformedURLException {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
     public void openTheBaseURL() {
-        driver.get(baseURL.toString());
+        driver.navigate().to(baseURL);
     }
 
     public String getTitle() {
@@ -42,7 +45,7 @@ public abstract class BasePage {
     }
 
     public Boolean isUILanguageEnglish() {
-        driver.get(googleURL.toString());
+        driver.navigate().to(googleURL);
         if ("Sign in".equalsIgnoreCase(signInButton.getText())) {
             return true;
         }
@@ -53,10 +56,14 @@ public abstract class BasePage {
         if (offerToUseGoogleCOM.isDisplayed()) {
             offerToUseGoogleCOM.click();
         }
-        driver.get(googleLanguageSettings.toString());
+        driver.navigate().to(googleLanguageSettings);
         englishLanguageSettingsItem.click();
         submitLanguageSettingsButton.click();
         driver.switchTo().alert().accept();
+    }
+
+    public void clickOnTheAppLogo() {
+        appLogo.click();
     }
 
 }

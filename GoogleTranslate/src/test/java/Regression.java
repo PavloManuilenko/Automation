@@ -1,13 +1,10 @@
 import com.google.translate.PageObjects.TranslationFromEnglish;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
-
-import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.*;
 
 public class Regression {
 
@@ -25,7 +22,7 @@ public class Regression {
         englishTranslationPage = new TranslationFromEnglish(driver);
     }
 
-    @BeforeClass(dependsOnMethods = {"preparationOfTheTestSuiteToRun"})
+    @BeforeClass(dependsOnMethods = {"preparationOfTheTestSuiteToRun"}, enabled = true)
     public void bringingUIToTheReadyState() {
         if (!englishTranslationPage.isUILanguageEnglish()) {
             englishTranslationPage.switchLanguageOfGoogleUIToEnglish();
@@ -38,9 +35,19 @@ public class Regression {
     }
 
     @Test
-    public void openTheURLOfBeginPage() {
+    public void openingTheURLOfBeginPage() {
         englishTranslationPage.openTheBaseURL();
-        assertEquals(driver.getTitle(), englishTranslationPage.getTitle());
+        englishTranslationPage.openThePage();
+        assertEquals(driver.getTitle(), englishTranslationPage.getTitle(), "Titles are not the same.");
+    }
+
+    @Test
+    public void clickingOnTheLogoForOpeningCleanTranslator() {
+        englishTranslationPage.openThePage();
+        englishTranslationPage.enterATextForTranslation("Some text");
+        assertTrue(englishTranslationPage.isThereSomethingInTheResultBox(), "Expected that text will displayed.");
+        englishTranslationPage.clickOnTheAppLogo();
+        assertFalse(englishTranslationPage.isThereSomethingInTheResultBox(), "Expected that text will absent.");
     }
 
 }
