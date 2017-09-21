@@ -18,7 +18,8 @@ public class Regression {
     public void preparationOfTheTestSuiteToRun() throws MalformedURLException {
         System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver2.32.exe");
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
         englishTranslationPage = new TranslationFromEnglish(driver);
     }
 
@@ -30,24 +31,53 @@ public class Regression {
     }
 
     @AfterClass
-    public void finish() {
+    public void finishRunningTheTestSuite() {
+        driver.manage().deleteAllCookies();
         driver.quit();
     }
 
-    @Test
+    @Test //US #1
     public void openingTheURLOfBeginPage() {
         englishTranslationPage.openTheBaseURL();
         englishTranslationPage.openThePage();
         assertEquals(driver.getTitle(), englishTranslationPage.getTitle(), "Titles are not the same.");
     }
 
-    @Test
+    @Test //US #2
     public void clickingOnTheLogoForOpeningCleanTranslator() {
         englishTranslationPage.openThePage();
         englishTranslationPage.enterATextForTranslation("Some text");
         assertTrue(englishTranslationPage.isThereSomethingInTheResultBox(), "Expected that text will displayed.");
         englishTranslationPage.clickOnTheAppLogo();
         assertFalse(englishTranslationPage.isThereSomethingInTheResultBox(), "Expected that text will absent.");
+    }
+
+    @Test //US #3
+    public void choosingASourceLanguage() {
+        englishTranslationPage.openThePage();
+        assertFalse(englishTranslationPage.stateOfPrePreparedLanguage("source"),
+                "The language has already pressed.");
+        englishTranslationPage.choosePrePreparedLanguage("source");
+        assertTrue(englishTranslationPage.stateOfPrePreparedLanguage("source"),
+                "The language was not pressed.");
+    }
+
+    @Test //US #4
+    public void choosingATargetLanguage() {
+        englishTranslationPage.openThePage();
+        assertFalse(englishTranslationPage.stateOfPrePreparedLanguage("target"),
+                "The language has already pressed.");
+        englishTranslationPage.choosePrePreparedLanguage("target");
+        assertTrue(englishTranslationPage.stateOfPrePreparedLanguage("target"),
+                "The language was not pressed.");
+    }
+
+    @Test //US #5
+    public void openingTheListWithAllSupportedSourceLanguages() {
+        englishTranslationPage.openThePage();
+        englishTranslationPage.openTheListWithAllSupportedSourceLanguages();
+        englishTranslationPage.chooseTheLanguageFromSourceList("English");
+
     }
 
 }
