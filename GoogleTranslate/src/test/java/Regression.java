@@ -36,14 +36,14 @@ public class Regression {
         driver.quit();
     }
 
-    @Test //US #1
+    @Test(enabled = false) //US #1
     public void openingTheURLOfBeginPage() {
         englishTranslationPage.openTheBaseURL();
         englishTranslationPage.openThePage();
         assertEquals(driver.getTitle(), englishTranslationPage.getTitle(), "Titles are not the same.");
     }
 
-    @Test //US #2
+    @Test(enabled = false) //US #2
     public void clickingOnTheLogoForOpeningCleanTranslator() {
         englishTranslationPage.openThePage();
         englishTranslationPage.enterATextForTranslation("Some text");
@@ -52,7 +52,7 @@ public class Regression {
         assertFalse(englishTranslationPage.isThereSomethingInTheResultBox(), "Expected that text will absent.");
     }
 
-    @Test //US #3
+    @Test(enabled = false) //US #3
     public void choosingASourceLanguage() {
         englishTranslationPage.openThePage();
         assertFalse(englishTranslationPage.stateOfPrePreparedLanguage("source"),
@@ -62,7 +62,7 @@ public class Regression {
                 "The language was not pressed.");
     }
 
-    @Test //US #4
+    @Test(enabled = false) //US #4
     public void choosingATargetLanguage() {
         englishTranslationPage.openThePage();
         assertFalse(englishTranslationPage.stateOfPrePreparedLanguage("target"),
@@ -75,9 +75,24 @@ public class Regression {
     @Test //US #5
     public void openingTheListWithAllSupportedSourceLanguages() {
         englishTranslationPage.openThePage();
-        englishTranslationPage.openTheListWithAllSupportedSourceLanguages();
-        englishTranslationPage.chooseTheLanguageFromSourceList("English");
+        englishTranslationPage.openTheListWithAllSupportedSourceOrTargetLanguages("source");
+        assertEquals(104, englishTranslationPage.countOfAllSupportedSourceOrTargetLanguages(),
+                "Count of all supported languages did not match.");
+    }
 
+    @Test //US #6
+    public void openingTheListWithAllSupportedTargetLanguages() {
+        englishTranslationPage.openThePage();
+        englishTranslationPage.openTheListWithAllSupportedSourceOrTargetLanguages("target");
+        assertEquals(104, englishTranslationPage.countOfAllSupportedSourceOrTargetLanguages(),
+                "Count of all supported languages did not match.");
+    }
+
+    @Test //US #7
+    public void selectingALanguageFromSourceList() {
+        englishTranslationPage.openThePage();
+        englishTranslationPage.openTheListWithAllSupportedSourceOrTargetLanguages("target");
+        englishTranslationPage.chooseTheLanguageFromSourceList("");
     }
 
 }

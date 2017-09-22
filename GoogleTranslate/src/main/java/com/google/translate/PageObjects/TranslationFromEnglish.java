@@ -3,13 +3,10 @@ package com.google.translate.PageObjects;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 
 public class TranslationFromEnglish extends BasePage implements TranslationPage{
@@ -31,8 +28,11 @@ public class TranslationFromEnglish extends BasePage implements TranslationPage{
     @FindBy(xpath = ".//*[@id='gt-sl-gms']")
     private WebElement theListWithAllSupportedSourceLanguages;
 
-    @FindAll({@FindBy(xpath = ".//*[@class='goog-menuitem-checkbox']")})
-    private List<WebElement> allSupportedSourceLanguages;
+    @FindBy(xpath = ".//*[@id='gt-tl-gms']")
+    private WebElement theListWithAllSupportedTargetLanguages;
+
+    @FindBy(xpath = ".//div[@class='goog-menuitem-checkbox']/..")
+    private List<WebElement> allSupportedSourceOrTargetLanguages;
 
     public TranslationFromEnglish(WebDriver driver) throws MalformedURLException {
         super(driver);
@@ -75,16 +75,19 @@ public class TranslationFromEnglish extends BasePage implements TranslationPage{
         else return false;
     }
 
-    public void openTheListWithAllSupportedSourceLanguages() {
-        theListWithAllSupportedSourceLanguages.click();
+    public void openTheListWithAllSupportedSourceOrTargetLanguages(String sourceOrTarget) {
+        if (sourceOrTarget.equalsIgnoreCase("source")) theListWithAllSupportedSourceLanguages.click();
+        else if (sourceOrTarget.equalsIgnoreCase("target")) theListWithAllSupportedTargetLanguages.click();
     }
 
-    public void chooseTheLanguageFromSourceList(String language){
-        List<WebElement> languagesFromSourceList = new ArrayList<WebElement>();
-        languagesFromSourceList.addAll(allSupportedSourceLanguages);
+    public int countOfAllSupportedSourceOrTargetLanguages() {
+        return allSupportedSourceOrTargetLanguages.size();
+        }
 
-        for (WebElement we : languagesFromSourceList) {
-            System.out.println(we.getText());
+    public void chooseTheLanguageFromSourceList(String language){
+        for (WebElement we : allSupportedSourceOrTargetLanguages) {
+            System.out.println("getText: " + we.getText());
+
         }
     }
 
