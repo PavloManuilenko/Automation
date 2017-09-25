@@ -9,9 +9,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
-public class TranslationFromEnglish extends BasePage implements TranslationPage{
+public class TranslationFromEnglish extends BasePage implements TranslationPage {
 
-    private URL url = new URL("https", "translate.google.com", 443, "/#en");
+    private URL url = new URL("https", "translate.google.com", 443, "");
 
     @FindBy(xpath = ".//*[@id='source']")
     private WebElement textField;
@@ -19,11 +19,11 @@ public class TranslationFromEnglish extends BasePage implements TranslationPage{
     @FindBy(xpath = ".//span[@id='result_box']/span")
     private WebElement resultBox;
 
-    @FindBy(xpath = ".//*[@id='gt-sl-sugg']/div[1]")
-    private WebElement firstPrePreparedSourceLanguage;
+    @FindBy(xpath = ".//*[@id='gt-sl-sugg']/div")
+    private List<WebElement> prePreparedSourceLanguages;
 
-    @FindBy(xpath = ".//*[@id='gt-tl-sugg']/div[2]")
-    private WebElement secondPrePreparedTargetLanguage;
+    @FindBy(xpath = ".//*[@id='gt-tl-sugg']/div")
+    private List<WebElement> prePreparedTargetLanguages;
 
     @FindBy(xpath = ".//*[@id='gt-sl-gms']")
     private WebElement theListWithAllSupportedSourceLanguages;
@@ -50,8 +50,7 @@ public class TranslationFromEnglish extends BasePage implements TranslationPage{
         try {
             resultBox.isDisplayed();
             return true;
-        }
-        catch (NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             return false;
         }
     }
@@ -61,34 +60,66 @@ public class TranslationFromEnglish extends BasePage implements TranslationPage{
     }
 
     public void choosePrePreparedLanguage(String sourceOrTarget) {
-        if (sourceOrTarget.equalsIgnoreCase("source")) firstPrePreparedSourceLanguage.click();
-        else if (sourceOrTarget.equalsIgnoreCase("target")) secondPrePreparedTargetLanguage.click();
+        if (sourceOrTarget.equalsIgnoreCase("source")) prePreparedSourceLanguages.get(0).click();
+        else if (sourceOrTarget.equalsIgnoreCase("target")) prePreparedTargetLanguages.get(1).click();
     }
 
-    public Boolean stateOfPrePreparedLanguage(String sourceOrTarget) {
+    public Boolean stateOfPrePreparedLanguage(String sourceOrTarget, int numOfLang) {
         if (sourceOrTarget.equalsIgnoreCase("source")) {
-            return Boolean.valueOf(firstPrePreparedSourceLanguage.getAttribute("aria-pressed"));
-        }
-        else if (sourceOrTarget.equalsIgnoreCase("target")) {
-            return Boolean.valueOf(secondPrePreparedTargetLanguage.getAttribute("aria-pressed"));
-        }
-        else return false;
+            return Boolean.valueOf(prePreparedSourceLanguages.get(numOfLang).getAttribute("aria-pressed"));
+        } else if (sourceOrTarget.equalsIgnoreCase("target")) {
+            return Boolean.valueOf(prePreparedTargetLanguages.get(numOfLang).getAttribute("aria-pressed"));
+        } else return false;
     }
 
-    public void openTheListWithAllSupportedSourceOrTargetLanguages(String sourceOrTarget) {
+    public void openTheListWithAllSupportedLanguages(String sourceOrTarget) {
         if (sourceOrTarget.equalsIgnoreCase("source")) theListWithAllSupportedSourceLanguages.click();
         else if (sourceOrTarget.equalsIgnoreCase("target")) theListWithAllSupportedTargetLanguages.click();
     }
 
     public int countOfAllSupportedSourceOrTargetLanguages() {
         return allSupportedSourceOrTargetLanguages.size();
-        }
+    }
 
-    public void chooseTheLanguageFromSourceList(String language){
-        for (WebElement we : allSupportedSourceOrTargetLanguages) {
-            System.out.println("getText: " + we.getText());
+    public String changePrePreparedLanguageOnSomeoneElseFromTheList(String sourceOrTarget) {
+        String selectedLanguage = "";
+        List<WebElement> prePreparedLanguages;
+        int flag;
 
+        if (sourceOrTarget.equalsIgnoreCase("source")) {
+            prePreparedLanguages = prePreparedSourceLanguages;
+        } else prePreparedLanguages = prePreparedTargetLanguages;
+
+        for (int i = 1; i < allSupportedSourceOrTargetLanguages.size(); i++) { //i starts from 1, because on 0-index 'Detect language' item.
+            flag = 0;
+            for (int j = 0; j < 3; j++) { //3 pre prepared languages
+                if (!prePreparedLanguages.get(j).getText().equals(allSupportedSourceOrTargetLanguages.get(i)
+                        .getText())) flag++;
+            }
+            if (flag == 3) {
+                selectedLanguage = allSupportedSourceOrTargetLanguages.get(i).getText();
+                allSupportedSourceOrTargetLanguages.get(i).click();
+                break;
+            }
         }
+        return selectedLanguage;
+    }
+
+    public String whichLanguageIsTurnOn(String sourceOrTarget) {
+        if (sourceOrTarget.equalsIgnoreCase("source")) {
+            for (int i = 0; i < 3; i++) {
+                if (stateOfPrePreparedLanguage("source", i)) {
+                    return prePreparedSourceLanguages.get(i).getText();
+                }
+            }
+        } else if (sourceOrTarget.equalsIgnoreCase("target")) {
+            for (int i = 0; i < 3; i++) {
+                if (stateOfPrePreparedLanguage("target", i)) {
+                    return prePreparedTargetLanguages.get(i).getText();
+                }
+            }
+        }
+        return "Cannot recognize which language is turn on";
     }
 
 }
