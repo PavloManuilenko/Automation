@@ -4,14 +4,10 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.List;
 
-public class TranslationFromEnglish extends BasePage implements TranslationPage {
-
-    private URL url = new URL("https", "translate.google.com", 443, "");
+public class TranslatorPage extends BasePage {
 
     @FindBy(xpath = ".//*[@id='source']")
     private WebElement textField;
@@ -34,12 +30,18 @@ public class TranslationFromEnglish extends BasePage implements TranslationPage 
     @FindBy(xpath = ".//div[@class='goog-menuitem-checkbox']/..")
     private List<WebElement> allSupportedSourceOrTargetLanguages;
 
-    public TranslationFromEnglish(WebDriver driver) throws MalformedURLException {
+    @FindBy(xpath = ".//*[@id='gt-swap']")
+    private WebElement switchButton;
+
+    @FindBy(xpath = ".//div[@id='gt-src-cc-ctr']")
+    private WebElement characterCounter;
+
+    public TranslatorPage(WebDriver driver) throws MalformedURLException {
         super(driver);
     }
 
     public void openThePage() {
-        driver.navigate().to(url);
+        driver.navigate().to(translatorURL);
     }
 
     public void enterATextForTranslation(String text) {
@@ -122,4 +124,19 @@ public class TranslationFromEnglish extends BasePage implements TranslationPage 
         return "Cannot recognize which language is turn on";
     }
 
+    public String translate(String translateFrom, String translateTo, String source, String expected) {
+        driver.get(translatorURL + "/#" + translateFrom + "/" + translateTo);
+        enterATextForTranslation(source);
+        return expected;
+    }
+
+    public void switchTargetAndSourceLanguages() {
+        switchButton.click();
+    }
+
+    public int characterCounterState() {
+        String tempStr = characterCounter.getText();
+        int lastIndex = tempStr.indexOf('/');
+        return Integer.parseInt(tempStr.substring(0, lastIndex));
+    }
 }

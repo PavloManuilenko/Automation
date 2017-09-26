@@ -1,4 +1,4 @@
-import com.google.translate.PageObjects.TranslationFromEnglish;
+import com.google.translate.PageObjects.TranslatorPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
@@ -9,7 +9,7 @@ import static org.testng.Assert.*;
 public class Regression {
 
     WebDriver driver;
-    TranslationFromEnglish englishTranslationPage;
+    TranslatorPage translator;
 
     public Regression() throws MalformedURLException {
     }
@@ -20,13 +20,13 @@ public class Regression {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        englishTranslationPage = new TranslationFromEnglish(driver);
+        translator = new TranslatorPage(driver);
     }
 
     @BeforeClass(dependsOnMethods = {"preparationOfTheTestSuiteToRun"}, enabled = true)
     public void bringingUIToTheReadyState() {
-        if (!englishTranslationPage.isUILanguageEnglish()) {
-            englishTranslationPage.switchLanguageOfGoogleUIToEnglish();
+        if (!translator.isUILanguageEnglish()) {
+            translator.switchLanguageOfGoogleUIToEnglish();
         }
     }
 
@@ -36,74 +36,115 @@ public class Regression {
         driver.quit();
     }
 
-    @Test(enabled = true) //US #1
+    @Test //US #1
     public void openingTheURLOfBeginPage() {
-        //englishTranslationPage.openTheBaseURL();
-        englishTranslationPage.openThePage();
-        assertEquals(driver.getTitle(), englishTranslationPage.getTitle(), "Titles are not the same.");
+        translator.openThePage();
+        assertEquals(driver.getTitle(), translator.getTitle(), "Titles are not the same.");
     }
 
-    @Test(enabled = true) //US #2
+    @Test //US #2
     public void clickingOnTheLogoForOpeningCleanTranslator() {
-        englishTranslationPage.openThePage();
-        englishTranslationPage.enterATextForTranslation("Some text");
-        assertTrue(englishTranslationPage.isThereSomethingInTheResultBox(), "Expected that text will displayed.");
-        englishTranslationPage.clickOnTheAppLogo();
-        assertFalse(englishTranslationPage.isThereSomethingInTheResultBox(), "Expected that text will absent.");
+        translator.openThePage();
+        translator.enterATextForTranslation("Some text");
+        assertTrue(translator.isThereSomethingInTheResultBox(), "Expected that text will displayed.");
+        translator.clickOnTheAppLogo();
+        assertFalse(translator.isThereSomethingInTheResultBox(), "Expected that text will absent.");
     }
 
-    @Test(enabled = true) //US #3
+    @Test //US #3
     public void choosingASourceLanguage() {
-        englishTranslationPage.openThePage();
-        assertFalse(englishTranslationPage.stateOfPrePreparedLanguage("source", 0),
+        translator.openThePage();
+        assertFalse(translator.stateOfPrePreparedLanguage("source", 0),
                 "The language has already pressed.");
-        englishTranslationPage.choosePrePreparedLanguage("source");
-        assertTrue(englishTranslationPage.stateOfPrePreparedLanguage("source", 0),
+        translator.choosePrePreparedLanguage("source");
+        assertTrue(translator.stateOfPrePreparedLanguage("source", 0),
                 "The language was not pressed.");
     }
 
-    @Test(enabled = true) //US #4
+    @Test //US #4
     public void choosingATargetLanguage() {
-        englishTranslationPage.openThePage();
-        assertFalse(englishTranslationPage.stateOfPrePreparedLanguage("target", 1),
+        translator.openThePage();
+        assertFalse(translator.stateOfPrePreparedLanguage("target", 1),
                 "The language has already pressed.");
-        englishTranslationPage.choosePrePreparedLanguage("target");
-        assertTrue(englishTranslationPage.stateOfPrePreparedLanguage("target", 1),
+        translator.choosePrePreparedLanguage("target");
+        assertTrue(translator.stateOfPrePreparedLanguage("target", 1),
                 "The language was not pressed.");
     }
 
-    @Test(enabled = true) //US #5
+    @Test //US #5
     public void openingTheListWithAllSupportedSourceLanguages() {
-        englishTranslationPage.openThePage();
-        englishTranslationPage.openTheListWithAllSupportedLanguages("source");
-        assertEquals(104, englishTranslationPage.countOfAllSupportedSourceOrTargetLanguages(),
+        translator.openThePage();
+        translator.openTheListWithAllSupportedLanguages("source");
+        assertEquals(104, translator.countOfAllSupportedSourceOrTargetLanguages(),
                 "Count of all supported languages did not match.");
     }
 
-    @Test(enabled = true) //US #6
+    @Test //US #6
     public void openingTheListWithAllSupportedTargetLanguages() {
-        englishTranslationPage.openThePage();
-        englishTranslationPage.openTheListWithAllSupportedLanguages("target");
-        assertEquals(104, englishTranslationPage.countOfAllSupportedSourceOrTargetLanguages(),
+        translator.openThePage();
+        translator.openTheListWithAllSupportedLanguages("target");
+        assertEquals(104, translator.countOfAllSupportedSourceOrTargetLanguages(),
                 "Count of all supported languages did not match.");
     }
 
-    @Test(enabled = true) //US #7
+    @Test //US #7
     public void selectingALanguageFromSourceList() {
-        englishTranslationPage.openThePage();
-        englishTranslationPage.openTheListWithAllSupportedLanguages("source");
-        String exp = englishTranslationPage.changePrePreparedLanguageOnSomeoneElseFromTheList("source");
-        String actual = englishTranslationPage.whichLanguageIsTurnOn("source");
+        translator.openThePage();
+        translator.openTheListWithAllSupportedLanguages("source");
+        String exp = translator.changePrePreparedLanguageOnSomeoneElseFromTheList("source");
+        String actual = translator.whichLanguageIsTurnOn("source");
         assertEquals(actual, exp, "The turned on language is different than expected.");
     }
 
-    @Test(enabled = true) //US #7
+    @Test //US #7
     public void selectingALanguageFromTargetList() {
-        englishTranslationPage.openThePage();
-        englishTranslationPage.openTheListWithAllSupportedLanguages("target");
-        String exp = englishTranslationPage.changePrePreparedLanguageOnSomeoneElseFromTheList("target");
-        String actual = englishTranslationPage.whichLanguageIsTurnOn("target");
+        translator.openThePage();
+        translator.openTheListWithAllSupportedLanguages("target");
+        String exp = translator.changePrePreparedLanguageOnSomeoneElseFromTheList("target");
+        String actual = translator.whichLanguageIsTurnOn("target");
         assertEquals(actual, exp, "The turned on language is different than expected.");
+    }
+
+    @Test //US #8
+    public void wordTranslating() {
+        translator.openThePage();
+        String exp = translator.translate("en", "uk", "translator", "перекладач");
+        assertTrue(translator.isThereSomethingInTheResultBox(), "There is nothing in result.");
+        assertEquals(translator.getTextFromTheResultBox(), exp, "Expected translation is different.");
+    }
+
+    @Test //US #9
+    public void sentenceTranslating() {
+        translator.openThePage();
+        String exp = translator.translate("en", "uk", "Hello World!", "Привіт Світ!");
+        assertTrue(translator.isThereSomethingInTheResultBox(), "There is nothing in result.");
+        assertEquals(translator.getTextFromTheResultBox(), exp, "Expected translation is different.");
+    }
+
+    @Test //US #10
+    public void switchingTargetAndSourceLanguages() {
+        translator.openThePage();
+        translator.choosePrePreparedLanguage("source");
+        translator.choosePrePreparedLanguage("target");
+        String s = translator.whichLanguageIsTurnOn("source");
+        String t = translator.whichLanguageIsTurnOn("target");
+        assertNotEquals(s, t, "Source and target languages are the same.");
+        translator.switchTargetAndSourceLanguages();
+        assertEquals(translator.whichLanguageIsTurnOn("source"), t, "Switching was not made");
+        assertEquals(translator.whichLanguageIsTurnOn("target"), s, "Switching was not made");
+    }
+
+    @Test //US #11 and #12
+    public void testingCharacterCounterAndMaxLimit() {
+        translator.openThePage();
+        assertTrue(translator.characterCounterState() == 0);
+        translator.enterATextForTranslation("a");
+        assertTrue(translator.characterCounterState() == 1);
+        //Flood up to limit
+        for (int i = 0; i < 100; i++) {
+            translator.enterATextForTranslation("a a a a a a a a a a a a a a a a a a a a a a a a a a ");
+        }
+        assertTrue(translator.characterCounterState() == 5000);
     }
 
 }

@@ -10,10 +10,10 @@ import java.net.URL;
 
 public abstract class BasePage {
 
-    protected WebDriver driver;
+    WebDriver driver;
     private URL googleURL = new URL("https", "google.com", 443, "");
     private URL googleLanguageSettings = new URL("https", "google.com", 443, "/preferences#languages");
-    private URL baseURL = new URL("https", "translate.google.com", 443, "");
+    URL translatorURL = new URL("https", "translate.google.com", 443, "");
     private String title = new String("Google Translate");
 
     @FindBy(xpath = ".//a[@id='gb_70']")
@@ -37,7 +37,7 @@ public abstract class BasePage {
     }
 
     public void openTheBaseURL() {
-        driver.navigate().to(baseURL);
+        driver.navigate().to(translatorURL);
     }
 
     public String getTitle() {
