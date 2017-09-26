@@ -36,6 +36,12 @@ public class TranslatorPage extends BasePage {
     @FindBy(xpath = ".//div[@id='gt-src-cc-ctr']")
     private WebElement characterCounter;
 
+    @FindBy(xpath = ".//*[@id='t-new-user']")
+    private WebElement translateCommunity;
+
+    @FindBy(xpath = ".//div[@id='gt-pb-sw1']")
+    public WebElement phrasebook;
+
     public TranslatorPage(WebDriver driver) throws MalformedURLException {
         super(driver);
     }
@@ -139,4 +145,13 @@ public class TranslatorPage extends BasePage {
         int lastIndex = tempStr.indexOf('/');
         return Integer.parseInt(tempStr.substring(0, lastIndex));
     }
+
+    public void goToTranslateCommunity() {
+        translateCommunity.click();
+    }
+
+    public void openPhrasebook() {
+        phrasebook.click();
+    }
+
 }

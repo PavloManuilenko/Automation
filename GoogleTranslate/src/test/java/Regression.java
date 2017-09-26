@@ -1,4 +1,5 @@
 import com.google.translate.PageObjects.TranslatorPage;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
@@ -145,6 +146,28 @@ public class Regression {
             translator.enterATextForTranslation("a a a a a a a a a a a a a a a a a a a a a a a a a a ");
         }
         assertTrue(translator.characterCounterState() == 5000);
+    }
+
+    @Test //US #13
+    public void goToTranslateCommunityFromTranslatorPage() {
+        translator.openThePage();
+        translator.goToTranslateCommunity();
+        assertEquals(driver.getCurrentUrl(), "https://translate.google.com/community?source=t-new-user");
+        assertEquals(driver.getTitle(), "Translate Community");
+    }
+
+    @Test //US #14
+    public void redirectingToLoginPageIfTryToSeePhrasebook() {
+        translator.openThePage();
+        translator.openPhrasebook();
+        assertEquals(driver.getTitle(), "Sign in - Google Accounts");
+    }
+
+    @Test //US #15
+    public void redirectingToLoginPageIfClickOnSignInButtonFromTopPanel() {
+        translator.openThePage();
+        translator.clickOnSignInButton();
+        assertEquals(driver.getTitle(), "Sign in - Google Accounts");
     }
 
 }
