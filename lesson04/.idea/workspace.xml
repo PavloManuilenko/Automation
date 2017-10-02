@@ -2,69 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a245d53b-8d96-4ebd-874f-5e4ddaf54385" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__cglib_cglib_nodep_3_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__com_beust_jcommander_1_64.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__com_codeborne_phantomjsdriver_1_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__net_java_dev_jna_jna_4_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_23.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_27.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_27.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_27.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_5_v20170502.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_seleniumhq_selenium_htmlunit_driver_2_27.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_testng_testng_6_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_uncommons_reportng_1_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__velocity_velocity_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__velocity_velocity_dep_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/src/main/java/com/google/translate/PageObjects/BasePage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/src/main/java/com/google/translate/PageObjects/TranslationFromEnglish.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/src/main/java/com/google/translate/PageObjects/TranslationFromRussian.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/src/main/java/com/google/translate/PageObjects/TranslationFromUkrainian.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GoogleTranslate/src/test/java/Regression.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lesson05/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../lesson05/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lesson06/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../lesson06/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lesson07/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../lesson07/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,7 +19,7 @@
       <file leaf-file-name="StartPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/StartPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
+            <state relative-caret-position="875">
               <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -104,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/TestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+              <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
               <folding>
                 <element signature="method#driverQuit#0;class#TestSuite#0" expanded="false" />
                 <element signature="method#verifyingTitleOfStartPageViaJS#0;class#TestSuite#0" expanded="false" />
@@ -178,6 +116,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -259,8 +199,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -635,7 +573,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2545946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2589189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39726028" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -668,6 +606,42 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/StartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#open#0;class#StartPage#0" expanded="false" />
+            <element signature="method#getCurrentTitleViaJS#0;class#StartPage#0" expanded="false" />
+            <element signature="method#getAlertFromThePageWithTimeout#0;class#StartPage#0" expanded="false" />
+            <element signature="method#waitOfElementPresenceByLocator#0;class#StartPage#0" expanded="false" />
+            <element signature="method#waitOfPaginationBlockOnSearchResultPage#0;class#StartPage#0" expanded="false" />
+            <element signature="method#search#0;class#StartPage#0" expanded="false" />
+            <element signature="method#isResultStatsAppeared#0;class#StartPage#0" expanded="false" />
+            <element signature="method#getWebElementFromCurrentPageViaCSSLocator#0;class#StartPage#0" expanded="false" />
+            <element signature="method#actionSearch#0;class#StartPage#0" expanded="false" />
+            <element signature="method#actionOpenFirstSearchResult#0;class#StartPage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+          <folding>
+            <element signature="method#driverQuit#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#verifyingTitleOfStartPageViaJS#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#comparingTextFromJSAlertAndExpected#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#testingOfSearchingOnce#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#testingOfGoingBackAndForwardAfterSearching#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#testingOfOpenRequiredSearchResultViaJS#0;class#TestSuite#0" expanded="false" />
+            <element signature="method#openingFirstResultOfSearchUsingActions#0;class#TestSuite#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/StartPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -713,8 +687,6 @@
         <state relative-caret-position="825">
           <caret line="59" column="57" lean-forward="false" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setUp#0;class#TestSuite#0" expanded="false" />
             <element signature="method#driverQuit#0;class#TestSuite#0" expanded="false" />
             <element signature="method#verifyingTitleOfStartPageViaJS#0;class#TestSuite#0" expanded="false" />
             <element signature="method#comparingTextFromJSAlertAndExpected#0;class#TestSuite#0" expanded="false" />
@@ -751,8 +723,6 @@
         <state relative-caret-position="1175">
           <caret line="74" column="17" lean-forward="false" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setUp#0;class#TestSuite#0" expanded="false" />
             <element signature="method#driverQuit#0;class#TestSuite#0" expanded="false" />
             <element signature="method#verifyingTitleOfStartPageViaJS#0;class#TestSuite#0" expanded="false" />
             <element signature="method#comparingTextFromJSAlertAndExpected#0;class#TestSuite#0" expanded="false" />
@@ -789,8 +759,6 @@
         <state relative-caret-position="900">
           <caret line="69" column="57" lean-forward="false" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setUp#0;class#TestSuite#0" expanded="false" />
             <element signature="method#driverQuit#0;class#TestSuite#0" expanded="false" />
             <element signature="method#verifyingTitleOfStartPageViaJS#0;class#TestSuite#0" expanded="false" />
             <element signature="method#comparingTextFromJSAlertAndExpected#0;class#TestSuite#0" expanded="false" />
@@ -827,8 +795,6 @@
         <state relative-caret-position="50">
           <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setUp#0;class#TestSuite#0" expanded="false" />
             <element signature="method#driverQuit#0;class#TestSuite#0" expanded="false" />
             <element signature="method#verifyingTitleOfStartPageViaJS#0;class#TestSuite#0" expanded="false" />
             <element signature="method#comparingTextFromJSAlertAndExpected#0;class#TestSuite#0" expanded="false" />
@@ -865,8 +831,6 @@
         <state relative-caret-position="697">
           <caret line="41" column="54" lean-forward="false" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setUp#0;class#TestSuite#0" expanded="false" />
             <element signature="method#driverQuit#0;class#TestSuite#0" expanded="false" />
             <element signature="method#verifyingTitleOfStartPageViaJS#0;class#TestSuite#0" expanded="false" />
             <element signature="method#comparingTextFromJSAlertAndExpected#0;class#TestSuite#0" expanded="false" />
@@ -903,8 +867,6 @@
         <state relative-caret-position="408">
           <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setUp#0;class#TestSuite#0" expanded="false" />
             <element signature="method#driverQuit#0;class#TestSuite#0" expanded="false" />
             <element signature="method#verifyingTitleOfStartPageViaJS#0;class#TestSuite#0" expanded="false" />
             <element signature="method#comparingTextFromJSAlertAndExpected#0;class#TestSuite#0" expanded="false" />
@@ -941,8 +903,6 @@
         <state relative-caret-position="600">
           <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setUp#0;class#TestSuite#0" expanded="false" />
             <element signature="method#driverQuit#0;class#TestSuite#0" expanded="false" />
             <element signature="method#verifyingTitleOfStartPageViaJS#0;class#TestSuite#0" expanded="false" />
             <element signature="method#comparingTextFromJSAlertAndExpected#0;class#TestSuite#0" expanded="false" />
@@ -1033,7 +993,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/StartPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
+        <state relative-caret-position="875">
           <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1054,10 +1014,8 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/TestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+          <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setUp#0;class#TestSuite#0" expanded="false" />
             <element signature="method#driverQuit#0;class#TestSuite#0" expanded="false" />
             <element signature="method#verifyingTitleOfStartPageViaJS#0;class#TestSuite#0" expanded="false" />
             <element signature="method#comparingTextFromJSAlertAndExpected#0;class#TestSuite#0" expanded="false" />

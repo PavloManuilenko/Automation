@@ -1,27 +1,22 @@
+import com.google.translate.PageObjects.BasePage;
 import com.google.translate.PageObjects.TranslatorPage;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 import java.net.MalformedURLException;
-import java.util.concurrent.TimeUnit;
 import static org.testng.Assert.*;
 
 public class Feature1 {
 
-    WebDriver driver;
-    TranslatorPage translator;
+    private WebDriver driver;
+    private TranslatorPage translator;
 
     public Feature1() throws MalformedURLException {
     }
 
     @BeforeClass
     public void preparationOfTheTestSuiteToRun() throws MalformedURLException {
-        System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver2.32.exe");
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-        translator = new TranslatorPage(driver);
+        translator = new TranslatorPage(driver = BasePage.getTheDriver(5));
     }
 
     @BeforeClass(dependsOnMethods = {"preparationOfTheTestSuiteToRun"}, enabled = true)
