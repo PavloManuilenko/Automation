@@ -40,7 +40,10 @@ public class TranslatorPage extends BasePage {
     private WebElement translateCommunity;
 
     @FindBy(xpath = ".//div[@id='gt-pb-sw1']")
-    public WebElement phrasebook;
+    private WebElement phrasebook;
+
+    @FindBy(xpath = ".//a[@id='gt-otf-switch']")
+    private WebElement instantTranslation;
 
     public TranslatorPage(WebDriver driver) throws MalformedURLException {
         super(driver);
@@ -152,6 +155,14 @@ public class TranslatorPage extends BasePage {
 
     public void openPhrasebook() {
         phrasebook.click();
+    }
+
+    public Boolean isInstantTranslationEnabled() {
+        return instantTranslation.getText().equalsIgnoreCase("Turn on instant translation");
+    }
+
+    public void instantTranslationModeSwitch() {
+        instantTranslation.click();
     }
 
 }

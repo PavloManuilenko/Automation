@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SuiteWithAllTests">
+    <test name="AllTests">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="Regression" />
+            <class name="Feature1" />
+        </classes>
+    </test>
+</suite>
