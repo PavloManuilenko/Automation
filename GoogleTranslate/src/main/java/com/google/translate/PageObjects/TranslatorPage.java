@@ -4,6 +4,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
 import java.net.MalformedURLException;
 import java.util.List;
 
@@ -49,6 +50,8 @@ public class TranslatorPage extends BasePage {
         super(driver);
     }
 
+    public enum Area {SOURCE, TARGET}
+
     public void openThePage() {
         driver.navigate().to(translatorURL);
     }
@@ -70,22 +73,37 @@ public class TranslatorPage extends BasePage {
         return resultBox.getText();
     }
 
-    public void choosePrePreparedLanguage(String sourceOrTarget) {
-        if (sourceOrTarget.equalsIgnoreCase("source")) prePreparedSourceLanguages.get(0).click();
-        else if (sourceOrTarget.equalsIgnoreCase("target")) prePreparedTargetLanguages.get(1).click();
+    public void choosePrePreparedLanguage(Area area) {
+        switch (area) {
+            case SOURCE:
+                prePreparedSourceLanguages.get(0).click();
+                break;
+            case TARGET:
+                prePreparedTargetLanguages.get(1).click();
+                break;
+        }
     }
 
-    public Boolean stateOfPrePreparedLanguage(String sourceOrTarget, int numOfLang) {
-        if (sourceOrTarget.equalsIgnoreCase("source")) {
-            return Boolean.valueOf(prePreparedSourceLanguages.get(numOfLang).getAttribute("aria-pressed"));
-        } else if (sourceOrTarget.equalsIgnoreCase("target")) {
-            return Boolean.valueOf(prePreparedTargetLanguages.get(numOfLang).getAttribute("aria-pressed"));
-        } else return false;
+    public Boolean stateOfPrePreparedLanguage(Area area, int numOfLang) {
+        switch (area) {
+            case SOURCE:
+                return Boolean.valueOf(prePreparedSourceLanguages.get(numOfLang).getAttribute("aria-pressed"));
+            case TARGET:
+                return Boolean.valueOf(prePreparedTargetLanguages.get(numOfLang).getAttribute("aria-pressed"));
+            default:
+                return false;
+        }
     }
 
-    public void openTheListWithAllSupportedLanguages(String sourceOrTarget) {
-        if (sourceOrTarget.equalsIgnoreCase("source")) theListWithAllSupportedSourceLanguages.click();
-        else if (sourceOrTarget.equalsIgnoreCase("target")) theListWithAllSupportedTargetLanguages.click();
+    public void openTheListWithAllSupportedLanguages(Area area) {
+        switch (area) {
+            case SOURCE:
+                theListWithAllSupportedSourceLanguages.click();
+                break;
+            case TARGET:
+                theListWithAllSupportedTargetLanguages.click();
+                break;
+        }
     }
 
     public int countOfAllSupportedSourceOrTargetLanguages() {
@@ -116,21 +134,25 @@ public class TranslatorPage extends BasePage {
         return selectedLanguage;
     }
 
-    public String whichLanguageIsTurnOn(String sourceOrTarget) {
-        if (sourceOrTarget.equalsIgnoreCase("source")) {
-            for (int i = 0; i < 3; i++) {
-                if (stateOfPrePreparedLanguage("source", i)) {
-                    return prePreparedSourceLanguages.get(i).getText();
+    public String whichLanguageIsTurnOn(Area area) {
+        String lang = "Cannot recognize which language is turn on";
+        switch (area) {
+            case SOURCE:
+                for (int i = 0; i < 3; i++) {
+                    if (stateOfPrePreparedLanguage(area, i)) {
+                        lang = prePreparedSourceLanguages.get(i).getText();
+                    }
                 }
-            }
-        } else if (sourceOrTarget.equalsIgnoreCase("target")) {
-            for (int i = 0; i < 3; i++) {
-                if (stateOfPrePreparedLanguage("target", i)) {
-                    return prePreparedTargetLanguages.get(i).getText();
+                break;
+            case TARGET:
+                for (int i = 0; i < 3; i++) {
+                    if (stateOfPrePreparedLanguage(area, i)) {
+                        lang = prePreparedTargetLanguages.get(i).getText();
+                    }
                 }
-            }
+                break;
         }
-        return "Cannot recognize which language is turn on";
+        return lang;
     }
 
     public String translate(String translateFrom, String translateTo, String source, String expected) {

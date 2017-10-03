@@ -51,27 +51,27 @@ public class Regression {
     @Test //US #3
     public void choosingASourceLanguage() {
         translator.openThePage();
-        assertFalse(translator.stateOfPrePreparedLanguage("source", 0),
+        assertFalse(translator.stateOfPrePreparedLanguage(TranslatorPage.Area.SOURCE, 0),
                 "The language has already pressed.");
-        translator.choosePrePreparedLanguage("source");
-        assertTrue(translator.stateOfPrePreparedLanguage("source", 0),
+        translator.choosePrePreparedLanguage(TranslatorPage.Area.SOURCE);
+        assertTrue(translator.stateOfPrePreparedLanguage(TranslatorPage.Area.SOURCE, 0),
                 "The language was not pressed.");
     }
 
     @Test //US #4
     public void choosingATargetLanguage() {
         translator.openThePage();
-        assertFalse(translator.stateOfPrePreparedLanguage("target", 1),
+        assertFalse(translator.stateOfPrePreparedLanguage(TranslatorPage.Area.TARGET, 1),
                 "The language has already pressed.");
-        translator.choosePrePreparedLanguage("target");
-        assertTrue(translator.stateOfPrePreparedLanguage("target", 1),
+        translator.choosePrePreparedLanguage(TranslatorPage.Area.TARGET);
+        assertTrue(translator.stateOfPrePreparedLanguage(TranslatorPage.Area.TARGET, 1),
                 "The language was not pressed.");
     }
 
     @Test //US #5
     public void openingTheListWithAllSupportedSourceLanguages() {
         translator.openThePage();
-        translator.openTheListWithAllSupportedLanguages("source");
+        translator.openTheListWithAllSupportedLanguages(TranslatorPage.Area.SOURCE);
         assertEquals(104, translator.countOfAllSupportedSourceOrTargetLanguages(),
                 "Count of all supported languages did not match.");
     }
@@ -79,7 +79,7 @@ public class Regression {
     @Test //US #6
     public void openingTheListWithAllSupportedTargetLanguages() {
         translator.openThePage();
-        translator.openTheListWithAllSupportedLanguages("target");
+        translator.openTheListWithAllSupportedLanguages(TranslatorPage.Area.TARGET);
         assertEquals(104, translator.countOfAllSupportedSourceOrTargetLanguages(),
                 "Count of all supported languages did not match.");
     }
@@ -87,18 +87,18 @@ public class Regression {
     @Test //US #7
     public void selectingALanguageFromSourceList() {
         translator.openThePage();
-        translator.openTheListWithAllSupportedLanguages("source");
+        translator.openTheListWithAllSupportedLanguages(TranslatorPage.Area.SOURCE);
         String exp = translator.changePrePreparedLanguageOnSomeoneElseFromTheList("source");
-        String actual = translator.whichLanguageIsTurnOn("source");
+        String actual = translator.whichLanguageIsTurnOn(TranslatorPage.Area.SOURCE);
         assertEquals(actual, exp, "The turned on language is different than expected.");
     }
 
     @Test //US #7
     public void selectingALanguageFromTargetList() {
         translator.openThePage();
-        translator.openTheListWithAllSupportedLanguages("target");
+        translator.openTheListWithAllSupportedLanguages(TranslatorPage.Area.TARGET);
         String exp = translator.changePrePreparedLanguageOnSomeoneElseFromTheList("target");
-        String actual = translator.whichLanguageIsTurnOn("target");
+        String actual = translator.whichLanguageIsTurnOn(TranslatorPage.Area.TARGET);
         assertEquals(actual, exp, "The turned on language is different than expected.");
     }
 
@@ -121,17 +121,17 @@ public class Regression {
     @Test //US #10
     public void switchingTargetAndSourceLanguages() {
         translator.openThePage();
-        translator.choosePrePreparedLanguage("source");
-        translator.choosePrePreparedLanguage("target");
-        String s = translator.whichLanguageIsTurnOn("source");
-        String t = translator.whichLanguageIsTurnOn("target");
+        translator.choosePrePreparedLanguage(TranslatorPage.Area.SOURCE);
+        translator.choosePrePreparedLanguage(TranslatorPage.Area.TARGET);
+        String s = translator.whichLanguageIsTurnOn(TranslatorPage.Area.SOURCE);
+        String t = translator.whichLanguageIsTurnOn(TranslatorPage.Area.TARGET);
         assertNotEquals(s, t, "Source and target languages are the same.");
         translator.switchTargetAndSourceLanguages();
-        assertEquals(translator.whichLanguageIsTurnOn("source"), t, "Switching was not made");
-        assertEquals(translator.whichLanguageIsTurnOn("target"), s, "Switching was not made");
+        assertEquals(translator.whichLanguageIsTurnOn(TranslatorPage.Area.SOURCE), t, "Switching was not made");
+        assertEquals(translator.whichLanguageIsTurnOn(TranslatorPage.Area.TARGET), s, "Switching was not made");
     }
 
-    @Test //US #11 and #12
+    @Test(enabled = true) //US #11 and #12
     public void testingCharacterCounterAndMaxLimit() {
         translator.openThePage();
         assertTrue(translator.characterCounterState() == 0);
