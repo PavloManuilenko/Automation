@@ -67,10 +67,7 @@ public class TranslatorPage extends BasePage {
     }
 
     public void enterATextForTranslation(String text) {
-        WebDriverWait wait = new WebDriverWait(driver, 5);
-        WebElement element = wait.until(ExpectedConditions.visibilityOf(textField));
-        //textField.sendKeys(text);
-        element.sendKeys(text);
+        textField.sendKeys(text);
     }
 
     public Boolean isThereSomethingInTheResultBox() {

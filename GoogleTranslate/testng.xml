@@ -5,6 +5,8 @@
         <classes>
             <class name="Regression" />
             <class name="Feature1" />
+            <class name="Feature2" />
+            <class name="Feature3" />
         </classes>
     </test>
 </suite>
