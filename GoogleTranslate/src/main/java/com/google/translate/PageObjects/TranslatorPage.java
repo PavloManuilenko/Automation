@@ -1,9 +1,9 @@
 package com.google.translate.PageObjects;
 
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.util.List;
@@ -46,6 +46,12 @@ public class TranslatorPage extends BasePage {
     @FindBy(xpath = ".//a[@id='gt-otf-switch']")
     private WebElement instantTranslation;
 
+    @FindBy(xpath = ".//*[@id='gt-ft-res']")
+    private WebElement footer;
+
+    @FindBy(xpath = ".//*[@id='gt-text-c']")//gt-text-c // gt-c
+    private WebElement pageContent;
+
     public TranslatorPage(WebDriver driver) throws MalformedURLException {
         super(driver);
     }
@@ -56,8 +62,15 @@ public class TranslatorPage extends BasePage {
         driver.navigate().to(translatorURL);
     }
 
+    public void openThePage(String urlEnds) {
+        driver.navigate().to(translatorURL.toString() + urlEnds);
+    }
+
     public void enterATextForTranslation(String text) {
-        textField.sendKeys(text);
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        WebElement element = wait.until(ExpectedConditions.visibilityOf(textField));
+        //textField.sendKeys(text);
+        element.sendKeys(text);
     }
 
     public Boolean isThereSomethingInTheResultBox() {
@@ -73,6 +86,10 @@ public class TranslatorPage extends BasePage {
         return resultBox.getText();
     }
 
+    public String getTextOFTheLanguageButton(int numOfLang) {
+        return prePreparedSourceLanguages.get(numOfLang).getText();
+    }
+
     public void choosePrePreparedLanguage(Area area) {
         switch (area) {
             case SOURCE:
@@ -80,6 +97,17 @@ public class TranslatorPage extends BasePage {
                 break;
             case TARGET:
                 prePreparedTargetLanguages.get(1).click();
+                break;
+        }
+    }
+
+    public void choosePrePreparedLanguage(Area area, int numOfLang) {
+        switch (area) {
+            case SOURCE:
+                prePreparedSourceLanguages.get(numOfLang).click();
+                break;
+            case TARGET:
+                prePreparedTargetLanguages.get(numOfLang).click();
                 break;
         }
     }
@@ -93,6 +121,10 @@ public class TranslatorPage extends BasePage {
             default:
                 return false;
         }
+    }
+
+    public Boolean isSwitchButtonEnabled() {
+        return !Boolean.valueOf(switchButton.getAttribute("aria-disabled"));
     }
 
     public void openTheListWithAllSupportedLanguages(Area area) {
@@ -162,7 +194,8 @@ public class TranslatorPage extends BasePage {
     }
 
     public void switchTargetAndSourceLanguages() {
-        switchButton.click();
+        if (isSwitchButtonEnabled()) switchButton.click();
+        else System.out.println("Switch button is disabled!");
     }
 
     public int characterCounterState() {
@@ -185,6 +218,11 @@ public class TranslatorPage extends BasePage {
 
     public void instantTranslationModeSwitch() {
         instantTranslation.click();
+    }
+
+    public void scrollIntoViewOfCharacterCounter() {
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("document.getElementById('gt-src-cc-ctr').scrollIntoView(true);");
     }
 
 }

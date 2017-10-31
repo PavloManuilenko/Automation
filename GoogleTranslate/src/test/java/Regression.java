@@ -131,15 +131,16 @@ public class Regression {
         assertEquals(translator.whichLanguageIsTurnOn(TranslatorPage.Area.TARGET), s, "Switching was not made");
     }
 
-    @Test(enabled = true) //US #11 and #12
+    @Test(enabled = false) //US #11 and #12
     public void testingCharacterCounterAndMaxLimit() {
         translator.openThePage();
         assertTrue(translator.characterCounterState() == 0);
         translator.enterATextForTranslation("a");
         assertTrue(translator.characterCounterState() == 1);
-        //Flood up to limit
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 97; i++) {//Flood up to limit
+            translator.scrollIntoViewOfCharacterCounter();
             translator.enterATextForTranslation("a a a a a a a a a a a a a a a a a a a a a a a a a a ");
+            translator.scrollIntoViewOfCharacterCounter();
         }
         assertTrue(translator.characterCounterState() == 5000);
     }

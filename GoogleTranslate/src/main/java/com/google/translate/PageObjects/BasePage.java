@@ -3,6 +3,7 @@ package com.google.translate.PageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -58,6 +59,11 @@ public abstract class BasePage {
             e.printStackTrace();
         }
         switch (browser) {
+            case "edge":
+                System.setProperty("webdriver.edge.driver", "./src/main/resources/MicrosoftWebDriver.exe");
+                driver = new EdgeDriver();
+                driver.manage().window().maximize();
+                break;
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver2.32.exe");
                 driver = new ChromeDriver();
