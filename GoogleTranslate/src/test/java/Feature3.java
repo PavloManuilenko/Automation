@@ -30,7 +30,7 @@ public class Feature3 {
         }
     }
 
-    @AfterClass(enabled = true)
+    @AfterClass(enabled = false)
     public void finishRunningTheTestSuite() {
         driver.manage().deleteAllCookies();
         driver.quit();
@@ -39,6 +39,5 @@ public class Feature3 {
     @Test //US #20
     public void openingHelpPageFromTheFooter() {
         translator.openThePage();
-
     }
 }
