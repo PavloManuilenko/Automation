@@ -88,7 +88,7 @@ public class Regression {
     public void selectingALanguageFromSourceList() {
         translator.openThePage();
         translator.openTheListWithAllSupportedLanguages(TranslatorPage.Area.SOURCE);
-        String exp = translator.changePrePreparedLanguageOnSomeoneElseFromTheList("source");
+        String exp = translator.changePrePreparedLanguageOnSomeoneElseFromTheList(TranslatorPage.Area.SOURCE);
         String actual = translator.whichLanguageIsTurnOn(TranslatorPage.Area.SOURCE);
         assertEquals(actual, exp, "The turned on language is different than expected.");
     }
@@ -97,7 +97,7 @@ public class Regression {
     public void selectingALanguageFromTargetList() {
         translator.openThePage();
         translator.openTheListWithAllSupportedLanguages(TranslatorPage.Area.TARGET);
-        String exp = translator.changePrePreparedLanguageOnSomeoneElseFromTheList("target");
+        String exp = translator.changePrePreparedLanguageOnSomeoneElseFromTheList(TranslatorPage.Area.TARGET);
         String actual = translator.whichLanguageIsTurnOn(TranslatorPage.Area.TARGET);
         assertEquals(actual, exp, "The turned on language is different than expected.");
     }

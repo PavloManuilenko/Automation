@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -63,6 +65,12 @@ public abstract class BasePage {
                 System.setProperty("webdriver.edge.driver", "./src/main/resources/MicrosoftWebDriver.exe");
                 driver = new EdgeDriver();
                 driver.manage().window().maximize();
+                break;
+            case "ie":
+                DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+                capabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
+                System.setProperty("webdriver.ie.driver", "./src/main/resources/IEDriverServer3.6.0.exe");
+                driver = new InternetExplorerDriver(capabilities);
                 break;
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver2.32.exe");

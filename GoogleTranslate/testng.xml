@@ -1,12 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="SuiteWithAllTests">
     <test name="AllTests">
-        <parameter name="browser" value="firefox" />
+        <parameter name="browser" value="ie" />
         <classes>
             <class name="Regression" />
             <class name="Feature1" />
             <class name="Feature2" />
             <class name="Feature3" />
+            <class name="Feature4" />
         </classes>
     </test>
 </suite>
