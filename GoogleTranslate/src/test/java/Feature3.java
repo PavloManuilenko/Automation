@@ -1,5 +1,4 @@
 import com.google.translate.PageObjects.BasePage;
-import com.google.translate.PageObjects.Footer;
 import com.google.translate.PageObjects.TranslatorPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
@@ -64,7 +63,13 @@ public class Feature3 {
     public void openingAboutGooglePage() {
         translator.openThePage();
         translator.footer.openAboutGooglePage();
-        assertEquals(driver.getCurrentUrl(),"https://www.google.com/about/");
+        if (translator.currentBrowser().equalsIgnoreCase("InternetExplorer")) {
+            assertEquals(driver.getCurrentUrl(),"http://www.google.com/about/");
+        }
+        else {
+            System.out.println(translator.currentBrowser());
+            assertEquals(driver.getCurrentUrl(), "https://www.google.com/about/");
+        }
     }
 
     @Test //US #24

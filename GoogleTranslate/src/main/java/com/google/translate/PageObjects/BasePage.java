@@ -1,5 +1,6 @@
 package com.google.translate.PageObjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -85,6 +86,14 @@ public abstract class BasePage {
         }
         driver.manage().timeouts().implicitlyWait(implicitlyWaitInSeconds, TimeUnit.SECONDS);
         return driver;
+    }
+
+    public String currentBrowser() {
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("return navigator.userAgent.search(/ /);");
+        int end = js.toString().lastIndexOf(':');
+        end -= 6;//deleting 'Driver' from str
+        return js.toString().substring(0, end);
     }
 
     public void openTheBaseURL() {
