@@ -131,15 +131,17 @@ public class Regression {
         assertEquals(translator.whichLanguageIsTurnOn(TranslatorPage.Area.TARGET), s, "Switching was not made");
     }
 
-    @Test(enabled = false) //US #11 and #12
+    @Test //US #11 and #12
     public void testingCharacterCounterAndMaxLimit() {
         translator.openThePage();
         assertTrue(translator.characterCounterState() == 0);
         translator.enterATextForTranslation("a");
         assertTrue(translator.characterCounterState() == 1);
+        if (translator.currentBrowser().equalsIgnoreCase("Firefox")) translator.instantTranslationModeSwitch();
         for (int i = 0; i < 100; i++) {//Flood up to limit
             translator.scrollIntoViewOfCharacterCounter();
             translator.enterATextForTranslation("a a a a a a a a a a a a a a a a a a a a a a a a a ");
+            if (translator.currentBrowser().equalsIgnoreCase("Firefox")) translator.clickTranslateButton();
             translator.scrollIntoViewOfCharacterCounter();
         }
         assertTrue(translator.characterCounterState() == 5000);
