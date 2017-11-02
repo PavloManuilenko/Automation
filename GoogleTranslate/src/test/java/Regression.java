@@ -137,16 +137,16 @@ public class Regression {
         assertTrue(translator.characterCounterState() == 0);
         translator.enterATextForTranslation("a");
         assertTrue(translator.characterCounterState() == 1);
-        for (int i = 0; i < 97; i++) {//Flood up to limit
+        for (int i = 0; i < 100; i++) {//Flood up to limit
             translator.scrollIntoViewOfCharacterCounter();
-            translator.enterATextForTranslation("a a a a a a a a a a a a a a a a a a a a a a a a a a ");
+            translator.enterATextForTranslation("a a a a a a a a a a a a a a a a a a a a a a a a a ");
             translator.scrollIntoViewOfCharacterCounter();
         }
         assertTrue(translator.characterCounterState() == 5000);
     }
 
     @Test //US #13
-    public void goToTranslateCommunityFromTranslatorPage() {
+    public void goToTranslateCommunityFromTranslatorPage() throws InterruptedException {
         translator.openThePage();
         translator.goToTranslateCommunity();
         assertEquals(driver.getCurrentUrl(), "https://translate.google.com/community?source=t-new-user");

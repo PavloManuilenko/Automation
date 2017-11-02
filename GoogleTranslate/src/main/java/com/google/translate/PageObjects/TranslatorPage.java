@@ -52,9 +52,6 @@ public class TranslatorPage extends BasePage {
     @FindBy(xpath = ".//*[@id='gt-ft-res']")
     private WebElement footerPanel;
 
-    //@FindBy(xpath = ".//*[@id='gt-text-c']")//gt-text-c // gt-c
-    //private WebElement pageContent;
-
     @FindBy(xpath = ".//a[@aria-label='Turn on Virtual Keyboard']")
     private WebElement virtualKeyboardSwitcher;
 

@@ -44,12 +44,11 @@ public class Feature3 {
         assertEquals(driver.getTitle(), "Google Translate Help");
     }
 
-    @Test(enabled = false) //US #21
+    @Test //US #21
     public void openingFeedbackPopUp() {
         translator.openThePage();
         translator.footer.openFeedbackPopUp();
         assertEquals(translator.footer.getFeedbackCaptionText(), "Send feedback");
-
     }
 
     @Test //US #22
