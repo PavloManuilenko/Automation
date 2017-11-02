@@ -144,6 +144,7 @@ public class Regression {
             if (translator.currentBrowser().equalsIgnoreCase("Firefox")) translator.clickTranslateButton();
             translator.scrollIntoViewOfCharacterCounter();
         }
+        if (translator.currentBrowser().equalsIgnoreCase("Firefox")) translator.instantTranslationModeSwitch();
         assertTrue(translator.characterCounterState() == 5000);
     }
 
