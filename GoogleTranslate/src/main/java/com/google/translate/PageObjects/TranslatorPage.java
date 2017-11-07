@@ -3,6 +3,9 @@ package com.google.translate.PageObjects;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.List;
 
@@ -212,6 +215,32 @@ public class TranslatorPage extends BasePage {
         return expected;
     }
 
+    private String getStringFromDictionary(String langCode, int numOfDictionaryLine) {
+        String str = "";
+        try (BufferedReader reader = new BufferedReader(new FileReader("./src/main/resources/dictionaries/" + langCode + ".txt"))) {
+            String line;
+            int i = 0;
+            while (null != (line = reader.readLine())) {
+                if (numOfDictionaryLine == i) {
+                    str = line.trim();
+                }
+                i++;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if (str.equals("")) return "Wrong num of Dictionary line";
+        else return str;
+    }
+
+    public String translate(String translateFrom, String translateTo, int numOfDictionaryLine) {
+        String source = getStringFromDictionary(translateFrom, numOfDictionaryLine);
+        String expected = getStringFromDictionary(translateTo, numOfDictionaryLine);
+        driver.get(translatorURL + "/#" + translateFrom + "/" + translateTo);
+        enterATextForTranslation(source);
+        return expected;
+    }
+
     public void switchTargetAndSourceLanguages() {
         if (isSwitchButtonEnabled()) switchButton.click();
         else System.out.println("Switch button is disabled!");
@@ -240,7 +269,7 @@ public class TranslatorPage extends BasePage {
     }
 
     public void scrollIntoViewOfCharacterCounter() {
-        JavascriptExecutor js = (JavascriptExecutor)driver;
+        JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("document.getElementById('gt-src-cc-ctr').scrollIntoView(true);");
     }
 
@@ -251,8 +280,7 @@ public class TranslatorPage extends BasePage {
     public Boolean isVirtualKeyboardAccessible() {
         try {
             return virtualKeyboardSwitcher.isDisplayed();
-        }
-        catch (NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             return false;
         }
 
@@ -261,8 +289,7 @@ public class TranslatorPage extends BasePage {
     public Boolean isVirtualKeyboardDisplayed() {
         try {
             return virtualKeyboard.isDisplayed();
-        }
-        catch (NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             return false;
         }
 
@@ -425,8 +452,7 @@ public class TranslatorPage extends BasePage {
             if (Character.isUpperCase(ch)) {
                 buttonsOfVirtualKeyboard.get(41).click();
                 hitKeyOnVirtualKeyboard(ch);
-            }
-            else hitKeyOnVirtualKeyboard(ch);
+            } else hitKeyOnVirtualKeyboard(ch);
         }
     }
 
