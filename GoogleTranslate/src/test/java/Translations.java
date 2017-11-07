@@ -38,7 +38,7 @@ public class Translations {
     }
 
     @Test //US #8 and #9
-    public void turningOffInstantTranslation() {
+    public void translation() {
         translator.openThePage();
         String exp = translator.translate("en", "ru", 0);
         assertTrue(translator.isThereSomethingInTheResultBox(), "There is nothing in result.");

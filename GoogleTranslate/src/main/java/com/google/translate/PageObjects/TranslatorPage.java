@@ -223,6 +223,7 @@ public class TranslatorPage extends BasePage {
             while (null != (line = reader.readLine())) {
                 if (numOfDictionaryLine == i) {
                     str = line.trim();
+                    break;
                 }
                 i++;
             }
@@ -230,6 +231,9 @@ public class TranslatorPage extends BasePage {
             e.printStackTrace();
         }
         if (str.equals("")) return "Wrong num of Dictionary line";
+        else if (numOfDictionaryLine == 0) {
+            return str.substring(1);
+        }
         else return str;
     }
 
