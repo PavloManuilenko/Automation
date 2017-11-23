@@ -1,5 +1,6 @@
-package com.google.translate.PageObjects;
+package com.google.translate.pageobjects;
 
+import com.google.translate.exceptions.DictionaryLineException;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 
@@ -215,7 +216,7 @@ public class TranslatorPage extends BasePage {
         return expected;
     }
 
-    private String getStringFromDictionary(String langCode, int numOfDictionaryLine) {
+    private String getStringFromDictionary(String langCode, int numOfDictionaryLine) throws DictionaryLineException {
         String str = "";
         try (BufferedReader reader = new BufferedReader(new FileReader("./src/main/resources/dictionaries/" + langCode + ".txt"))) {
             String line;
@@ -230,14 +231,14 @@ public class TranslatorPage extends BasePage {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        if (str.equals("")) return "Wrong num of Dictionary line";
+        if (str.equals("")) throw new DictionaryLineException("Line of the dictionary does not exist!");
         else if (numOfDictionaryLine == 0) {
             return str.substring(1);
         }
         else return str;
     }
 
-    public String translate(String translateFrom, String translateTo, int numOfDictionaryLine) {
+    public String translate(String translateFrom, String translateTo, int numOfDictionaryLine) throws DictionaryLineException {
         String source = getStringFromDictionary(translateFrom, numOfDictionaryLine);
         String expected = getStringFromDictionary(translateTo, numOfDictionaryLine);
         driver.get(translatorURL + "/#" + translateFrom + "/" + translateTo);
@@ -265,7 +266,7 @@ public class TranslatorPage extends BasePage {
     }
 
     public Boolean isInstantTranslationEnabled() {
-        return instantTranslation.getText().equalsIgnoreCase("Turn on instant translation");
+        return instantTranslation.getText().equalsIgnoreCase("Turn off instant translation");
     }
 
     public void instantTranslationModeSwitch() {

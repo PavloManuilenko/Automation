@@ -1,5 +1,5 @@
-import com.google.translate.PageObjects.BasePage;
-import com.google.translate.PageObjects.TranslatorPage;
+import com.google.translate.pageobjects.BasePage;
+import com.google.translate.pageobjects.TranslatorPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;

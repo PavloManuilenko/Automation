@@ -1,10 +1,12 @@
-import com.google.translate.PageObjects.BasePage;
-import com.google.translate.PageObjects.TranslatorPage;
+import com.google.translate.exceptions.DictionaryLineException;
+import com.google.translate.pageobjects.BasePage;
+import com.google.translate.pageobjects.TranslatorPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import static org.testng.Assert.assertEquals;
@@ -40,7 +42,14 @@ public class Translations {
     @Test //US #8 and #9
     public void translation() {
         translator.openThePage();
-        String exp = translator.translate("en", "ru", 0);
+        if (translator.isInstantTranslationEnabled()) translator.instantTranslationModeSwitch();
+        String exp = null;
+        try {
+            exp = translator.translate("uk", "ru", 0);
+        } catch (DictionaryLineException e) {
+            assertTrue(false, e.getMessage());
+        }
+        translator.clickTranslateButton();
         assertTrue(translator.isThereSomethingInTheResultBox(), "There is nothing in result.");
         assertEquals(translator.getTextFromTheResultBox(), exp, "Expected translation is different.");
     }

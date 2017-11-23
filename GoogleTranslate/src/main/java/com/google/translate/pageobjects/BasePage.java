@@ -1,4 +1,4 @@
-package com.google.translate.PageObjects;
+package com.google.translate.pageobjects;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package com.google.translate.PageObjects;
+package com.google.translate.pageobjects;
 //This is class for implementation Page Element abstraction level + composition
 
 import org.openqa.selenium.WebDriver;
