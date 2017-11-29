@@ -68,6 +68,12 @@ public class TranslatorPage extends BasePage {
     @FindBy(xpath = "//*[@id='kbd']/div/div/button")
     private List<WebElement> buttonsOfVirtualKeyboard;
 
+    @FindBy(xpath = ".//span[@class='ita-kd-img ita-kd-arrow ita-kd-icon-span']")
+    private WebElement additionalEntryTypes;
+
+    @FindBy(xpath = "html/body/ul/li[3]/span[3]")
+    private WebElement handwriteMode;
+
     public TranslatorPage(WebDriver driver) throws MalformedURLException {
         super(driver);
     }
@@ -465,4 +471,11 @@ public class TranslatorPage extends BasePage {
         virtualKeyboardCloseButton.click();
     }
 
+    public  void openListWithAdditionalEntryTypes() {
+        additionalEntryTypes.click();
+    }
+
+    public  void enableHandwritingMode() {
+        handwriteMode.click();
+    }
 }
