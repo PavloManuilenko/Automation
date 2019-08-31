@@ -17,7 +17,7 @@ public class ExportAllPlayLists {
     @BeforeClass
     public void openGooglePlayMusicAndSignIntoGoogleAccount() throws MalformedURLException {
         music = new MusicLibrary(driver = BasePage.getTheDriver(10));
-        titleOfThePageAfterTryToLogin = music.signIn("0978768117", "Paul753357");
+        titleOfThePageAfterTryToLogin = music.signIn("", "");
     }
 
     @AfterClass
@@ -34,5 +34,8 @@ public class ExportAllPlayLists {
     public void navigateToAllPlayLists() {
         Assert.assertEquals(music.goToAllPlayLists(), driver.getTitle());
     }
+
+    @Test
+    public
 
 }
