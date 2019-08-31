@@ -74,13 +74,13 @@ public class BasePage {
 
     protected void openLeftNavMenu() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
-        inputPass = wait.until(ExpectedConditions.elementToBeClickable(By.id("left-nav-open-button")));
+        leftNavOpenButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("left-nav-open-button")));
         leftNavOpenButton.click();
     }
 
     protected void openMyLibrary() {
         WebDriverWait wait = new WebDriverWait(driver, 5);
-        //sinputPass = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Music library")));
+        myLibrary = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Music library")));
         myLibrary.click();
     }
 

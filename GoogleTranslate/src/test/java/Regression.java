@@ -33,6 +33,8 @@ public class Regression {
         driver.quit();
     }
 
+
+
     @Test //US #1
     public void openingTheURLOfBeginPage() {
         translator.openThePage();

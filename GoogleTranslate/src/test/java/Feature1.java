@@ -32,7 +32,7 @@ public class Feature1 {
         driver.quit();
     }
 
-    @Test //US #16
+    @Test (testName="US #16")
     public void turningOffInstantTranslation() {
         translator.openThePage();
         if (translator.isInstantTranslationEnabled()) translator.instantTranslationModeSwitch();

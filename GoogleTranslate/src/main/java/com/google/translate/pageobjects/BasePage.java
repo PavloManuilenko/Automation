@@ -74,7 +74,7 @@ public abstract class BasePage {
                 driver = new InternetExplorerDriver(capabilities);
                 break;
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver2.32.exe");
+                System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver76.exe");
                 driver = new ChromeDriver();
                 driver.manage().window().maximize();
                 break;
@@ -113,9 +113,9 @@ public abstract class BasePage {
     }
 
     public void switchLanguageOfGoogleUIToEnglish() {
-        if (offerToUseGoogleCOM.isDisplayed()) {
+        /*if (offerToUseGoogleCOM.isDisplayed()) {
             offerToUseGoogleCOM.click();
-        }
+        }*/
         driver.navigate().to(googleLanguageSettings);
         englishLanguageSettingsItem.click();
         submitLanguageSettingsButton.click();

@@ -33,7 +33,7 @@ public class MusicLibrary extends BasePage{
     public String goToAllPlayLists() {
         openLeftNavMenu();
         openMyLibrary();
-        return driver.getTitle();
+        return getPlayListsTitle();
     }
 
 

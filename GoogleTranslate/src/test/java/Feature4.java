@@ -32,7 +32,7 @@ public class Feature4 {
         }
     }
 
-    @AfterClass(enabled = true)
+    @AfterClass()
     public void finishRunningTheTestSuite() {
         driver.manage().deleteAllCookies();
         driver.quit();
