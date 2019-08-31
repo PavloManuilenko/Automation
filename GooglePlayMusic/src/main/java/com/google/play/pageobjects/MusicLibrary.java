@@ -6,11 +6,15 @@ import org.openqa.selenium.support.FindBy;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 
 public class MusicLibrary extends BasePage{
 
     WebDriver driver;
     private String title = new String("Playlists - Google Play Music");
+
+    @FindBy(xpath = "(.//div[@class='lane-content'])[3]//a[@class='title fade-out tooltip']")
+    private List<WebElement> myPlayLists;
 
     @FindBy(xpath = ".//div[@class='material-card-grid cluster']") // ".//h2[@class='section-header']"
     private WebElement myPlaylists;
@@ -36,6 +40,9 @@ public class MusicLibrary extends BasePage{
         return getPlayListsTitle();
     }
 
+    public void fillCollectionOfAllPlayLists() {
+
+    }
 
 
 

@@ -1,7 +1,10 @@
 import com.google.play.pageobjects.BasePage;
 import com.google.play.pageobjects.MusicLibrary;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -36,6 +39,9 @@ public class ExportAllPlayLists {
     }
 
     @Test
-    public
+    public void CollectAllPlayLists() {
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Music library")));
+    }
 
 }
